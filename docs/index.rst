@@ -17,8 +17,11 @@ Contents
 
 .. toctree::
 
-   install
-   api
+   Install
+   Method
+   Input
+   Output
+   Examples
 
 
 
