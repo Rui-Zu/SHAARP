@@ -17,4 +17,7 @@ Contents
 
    install
    method
+   input
+   output
+   examples
 
