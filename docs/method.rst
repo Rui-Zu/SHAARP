@@ -7,7 +7,9 @@ Optical Geometry
 Coordinate Systems
 --------
 
-.. math:: Calculations at Linear Frequency (\omega)
+Calculations at Linear Frequency (
+.. math::\omega
+)
 --------
 
 
