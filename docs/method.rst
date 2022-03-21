@@ -7,7 +7,7 @@ Optical Geometry
 Coordinate Systems
 --------
 
-Calculations at Linear Frequency (:math:`{\\alpha}`)
+Calculations at Linear Frequency (:math:`{\alpha}`)
 --------------------------
 $\mu
 :math:`{\\alpha}` 
