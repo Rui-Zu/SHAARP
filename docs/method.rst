@@ -7,9 +7,9 @@ Optical Geometry
 Coordinate Systems
 --------
 
-Calculations at Linear Frequency (:math:`{\\alpha}` )
+Calculations at Linear Frequency (..math:: \omega)
 --------
 
 
-Calculations at Nonlinear Linear Frequency ($\alpha$)
+Calculations at Nonlinear Linear Frequency (..math:: 2\omega)
 --------
