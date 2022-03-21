@@ -7,9 +7,15 @@ Optical Geometry
 Coordinate Systems
 --------
 
-Calculations at Linear Frequency (.. math:: \omega)
+Calculations at Linear Frequency (
+.. math::
+ W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
+)
 --------
 
 
-Calculations at Nonlinear Linear Frequency (..math:: 2\omega)
+Calculations at Nonlinear Linear Frequency (
+.. math::
+2\omega
+)
 --------
