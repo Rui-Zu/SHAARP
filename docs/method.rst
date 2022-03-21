@@ -10,7 +10,7 @@ Coordinate Systems
 Calculations at Linear Frequency (
 .. math::\omega
 )
---------
+--------------------------
 
 
 Calculations at Nonlinear Linear Frequency
