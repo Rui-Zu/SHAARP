@@ -13,5 +13,7 @@ $\mu
 :math:`{\\alpha}` 
 :math:`{\alpha}` 
 .. math::`{\alpha}` 
+
+
 Calculations at Nonlinear Linear Frequency
 --------
