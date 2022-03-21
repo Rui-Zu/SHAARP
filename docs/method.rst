@@ -11,7 +11,7 @@ Calculations at Linear Frequency (
 .. math::\omega
 )
 --------------------------
-
+$\mu
 
 Calculations at Nonlinear Linear Frequency
 --------
