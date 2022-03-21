@@ -6,9 +6,6 @@ A generalized Mathematica based packaghe for deriving and simulating single surf
 .. note::
 
    This project is under active development.
-   
-.. math::
-   W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
 .. toctree::
 
