@@ -21,6 +21,10 @@ Calculations at Linear Frequency
 .. math::
 
   W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
+  
+  'Normal: $\mu=%.2f, \sigma=%.2f$'%
+  
+   $\mu
 
 Calculations at Nonlinear Linear Frequency
 --------
