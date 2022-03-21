@@ -1,10 +1,7 @@
-Welcome to Lumache's documentation!
+Welcome to SHAARP documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+A generalized Mathematica based packaghe for deriving and simulating single surface reflected second harmonic generation (SHG) using boudnary condition analysis. This package aims for a genralized material system with arbitrary orientaions and absobing characters.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
