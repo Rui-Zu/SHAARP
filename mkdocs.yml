@@ -1,0 +1,24 @@
+site_name: SHAARP
+site_url: https://example.com/
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_javascript:
+  - mathjax-config.js
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+nav:
+    - Home: index.md
+    - Installation and Setup: 1_install.md
+    - Simulation and Analytical Methods: 2_methods.md
+    - Input Parameters: 3_input.md
+    - Output Results: 4_output.md
+    - Examples: 5_examples.md
+
+theme: readthedocs
