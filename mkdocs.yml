@@ -15,10 +15,11 @@ extra_javascript:
 
 nav:
     - Home: index.md
-    - Installation and Setup: 1_install.md
-    - Simulation and Analytical Methods: 2_methods.md
-    - Input Parameters: 3_input.md
-    - Output Results: 4_output.md
-    - Examples: 5_examples.md
+    - Getting started: install.md
+    - Methods: methods.md
+    - Input Parameters: input.md
+    - Output Results: output.md
+    - Examples: examples.md
+    - Frequently Asked Questions (FAQ): FAQ.md
 
 theme: readthedocs
