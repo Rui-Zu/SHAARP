@@ -16,17 +16,17 @@ One important application of the code is to provide analytical expressions to fi
 Follow the steps below to get started with the package. For more detailed information on **#SHAARP.****_si_**, please refer to the [manual](https://shaarp.readthedocs.io/en/latest/).
 
 ## Installation 
-`#SHAARP_si` is written as a notebook using Wolfram Language and need to run with _Mathematica®_
-- OS: Windows 10/Mac ==?== 
-- [Mathematica 12.0+](https://user.wolfram.com/portal/myProducts.html) 
+`#SHAARP.si` is written as a notebook using Wolfram Language and need to run with _Mathematica®_
+- To install Mathematica, please refer to the [Installing Mathematica](https://reference.wolfram.com/language/tutorial/InstallingMathematica.html)
+- If you already have a Wolfram account, you can log in through the [portal](https://account.wolfram.com/login) and download the software.
 
 ## Open the # SHAARP._si_.nb in the _Mathematica®_ software on your computer
-1. Unzip the file and open the <span style="background-color: #D3D3D3">SHAARP_si.nb</span>. 
-	- Note: It is recommended to keep all the files in the same directory to access the full features of SHAARP._si_
+1. Unzip the file and open the `SHAARP_si.nb`. 
+	- Note: It is recommended to keep all the files in the same directory to access the full features of `SHAARP.si`
 	- Make sure if the Dynamic Evaluation has been enbled (it is enabled by default).
-2. From the menu <span style="background-color: #D3D3D3">Evaluate</span> -> <span style="background-color: #D3D3D3">Evaluate Notebook</span>
+2. From the menu `Evaluate` -> `Evaluate Notebook
 	- Note: This process will clear out all the definitions from other notebooks and enable the "Notation" package for the analytical solutions.
-3. After ~30s waiting time for initialization (==we need to improve it!==), you will see the main panel: 
+3. After ~30s waiting time for initialization, you will see the main panel: 
    ![Interface.png](docs/img/Interface.png)
 4. The main panel contains four parts
 	- [Input panels](input.md) specify all the input parameters 
@@ -35,9 +35,9 @@ Follow the steps below to get started with the package. For more detailed inform
 	- Update button execute the program by clicking it  
 
 ## Try preset demos
-- On the left-hand panel (LHP), scroll down to “<span style="background-color: #D3D3D3">Case Studies</span>”.
-- Click on <span style="background-color: #D3D3D3">LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>. All the parameters will be autofilled for this case.
-- In the “<span style="background-color: #D3D3D3">Functionality</span>”, Select “<span style="background-color: #D3D3D3">SHG Simulation</span>”. Leave the other LHP settings in their default settings.
+- On the left-hand panel (LHP), scroll down to “`Case Studies`”.
+- Click on <span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>. All the parameters will be autofilled for this case.
+- In the “`Functionality`”, Select “`SHG Simulation`”. Leave the other LHP settings in their default settings.
 - At the top R.H. corner, click “<span style="background-color: #9CCC65">Update</span>". (Please be patient, it may take a few seconds; Watch the progress bar on the top to track when the calculation is done.)
 - The first row of the right-hand panel (RHP) should depict the SHG polar plots ($I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$) for the default settings of polarization and plane of incidence (PoI) in the LHP.
 - Placing the cursor on the polar plots,and you can view a detailed description of the plots.
@@ -77,7 +77,7 @@ Note that $L_2$ lab axis is always fixed be perpendicular to the PoI.
 Now you have finished the tutorial on the orientations. Detailed discussions about various coordinate systems and orientations can be found in the manual. Question marks next to “<span style="background-color: #D3D3D3">Use Miller Indices (hkl)</span>” can help you quickly refer to the definition of $(Z_1,Z_2,Z_3)$ based on the point group you have selected.
 
 ## Linear Optical Tensors
-In this section, you will need to provide either complex refractive index $\widetilde{n}$ or the complex relative dielectric permittivity $\widetilde\epsilon$ for both the $\omega$ and $2\omega$ frequencies.
+In this section, you will need to provide either complex refractive index $\widetilde{n}$ or the complex relative dielectric permittivity $\widetilde\varepsilon$ for both the $\omega$ and $2\omega$ frequencies.
 !!! note
 	 These tensors are property tensors specificed in the crystal physics coordinates and _do not_ need to be changed when changing the crystal orientation.
 
@@ -86,9 +86,9 @@ In this section, you will need to provide either complex refractive index $\wide
 	 Note, use capital $I$ to represent the imaginary part in Mathematica.
 - Now the polar plots are updated with a real refractive index tensor at $\omega$ but a complex refractive tensor at $2\omega$. Next, try making the dielectric tensor at $\omega$ to be complex as well.
 
-## SHG Tensor ($d_{ijk}$)
+## SHG Tensor (<i>d<sub>ijk</sub></i>)
 - Based on the point group symmetry you have selected in the “<span style="background-color: #D3D3D3">Crystal Structure</span>”, the nonvanishing terms in the SHG tensor can be uniquely determined and provided in the Voigt notation<sup>1</sup>.
-- The default setting for the “<span style="background-color: #D3D3D3">LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>”provides the nonlinear coefficients of LiNbO<sub>3</sub> measured using the fundamental wavelength at 800nm. You can try to change those values and press “<span style="background-color: #9CCC65">Update</span>” to evaluate the influence on the SHG polar plots.
+- The default setting for the “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>”provides the nonlinear coefficients of LiNbO<sub>3</sub> measured using the fundamental wavelength at 800nm. You can try to change those values and press “<span style="background-color: #9CCC65">Update</span>” to evaluate the influence on the SHG polar plots.
 
 Now you have finished a quick tutorial on the input panels and performing the SHG simulation. SHAARP not only provides simulations of the polarized SHG response but also features in generating analytical expressions for fitting experimentally polar plots for determining nonlinear SHG coefficients and the crystal symmetry.
 
@@ -97,19 +97,19 @@ Now you have finished a quick tutorial on the input panels and performing the SH
 On the other hand, the <span style="background-color: #D3D3D3"><b>full analytical expressions</b></span> provides the complete variables-based analytical expressions where the linear and nonlinear optical properties, as well as the various polarization and incidence angles of measurement are assumed to be variables. This method will provide a comprehensive expression for the wave mixing in the nonlinear medium.
 
 ### Partial Analytical Expressions
-- Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
+- Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
 - Click <span style="background-color: #D3D3D3"><b>Partial Analytical Expressions</b></span> in the <span style="background-color: #D3D3D3"><b>Functionality</b></span> section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
-- The RHP will display the final intensity expressions of $I^{2\omega}(\phi,\psi)$, and $I^{2\omega}(\phi,\psi+\pi/2)$.
+- The RHP will display the final intensity expressions of $I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$.
 - The <span style="background-color: #D3D3D3"><b>Copy</b></span> button to the left of the expressions will allow you directly copy the expression and paste it into another document such as a Mathematica notebook, or Microsoft files.
 
 ### Full Analytical Expressions
-- Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
+- Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
 - Click <span style="background-color: #D3D3D3"><b>Full Analytical Expressions</b></span> in the <span style="background-color: #D3D3D3"><b>Functionality</b></span> section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
 !!! note
 	This calculation could take up to a few minutes due to the amount of calculations involved. Please be patient! The progress bar shown at the top of the GUI helps keep track of the progress in the calculation.
-- The RHP will display the final intensity expressions of $I^{2\omega}(\phi,\psi)$, and $I^{2\omega}(\phi,\psi+\pi/2)$.
+- The RHP will display the final intensity expressions of $I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$.
 - The <span style="background-color: #D3D3D3"><b>Copy</b></span> button to the left of the expressions will allow you directly copy the expression and paste it into another document such as a Mathematica notebook, or Microsoft files.
-- The analytical expressions are provided in sequence. For example, $E^{2\omega}(\phi,\psi)$ is expressed using <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span>_._ The expressions for the <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span> will also be provided in the output expressions as a function of the material property coefficients and the measurement geometry.
+- The analytical expressions are provided in sequence. For example, $E^{2\omega}(\varphi,\psi)$ is expressed using <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span>_._ The expressions for the <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span> will also be provided in the output expressions as a function of the material property coefficients and the measurement geometry.
 
 ## Defining New Presets
  <span style="background-color: #D3D3D3"><b>Materials Properties Preset Values</b></span>provides a way to store your input information so that you can review those input later. It works similarly to buttons in the  <span style="background-color: #D3D3D3"><b>Case Study</b></span> but allows users to customize input settings based on the need. This setting is particularly useful if you are varying some input settings to explore the influence and changes towards SHG response.
