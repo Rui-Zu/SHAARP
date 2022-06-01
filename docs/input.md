@@ -1,12 +1,7 @@
-[Home](index) 
-[Previous](install.md)
-[Next](output.md)
-___
-
 # Input Parameters
 This section introduces each subpanel of the input panel. Each subpanel is folderable and can be expanded of collapsed bysingle- clicking the bottum ![[img/Pasted image 20220529090158.png]] or ![[img/Pasted image 20220529090221.png]] at the upper left corner. 
 ## Functionality
->![[img/Pasted image 20220529085914.png]]
+>![Pastedimage20220529085914.png](img/Pastedimage20220529085914.png)
 >**Functionality subpanel**
 
 This subpanel contains four tabs corresponding to three different modes 
@@ -15,7 +10,7 @@ This subpanel contains four tabs corresponding to three different modes
 - Partial Analytical Expression directs to the tab for deriving the analytical expression of reflective SHG intensity with _some_ input parameters to be unknown and symbolic and others known with numerical values. 
 - Full Analytical Expression directions to the tab for showing the full analytical expression of reflective SHG intensity with _all_ input parameters to be unknown. 
 ## Polarimetry Settings
->![[img/Pasted image 20220529090657.png]]
+>![Pastedimage20220529090657.png](img/Pastedimage20220529090657.png)
 >**Polarimetry subpanel**
 
 This subpanel input parameters related to the geometric setup for the virtual polarimetry experiment. 
@@ -41,9 +36,9 @@ This subpanel input parameters related to the geometric setup for the virtual po
 		- Which mode to use can be determined [[Analyzer Mode]] 
 - Schematics 
 	- One can choose showing either 2D Schematics or 3D Schematics for the geometric setup and the visual definitions of the angles. 
->![[img/Pasted image 20220529092357.png]]
+>![Pastedimage20220529092357.png](img/Pastedimage20220529092357.png)
 >**2D schematics of Polarimetry setup**
->![[img/Pasted image 20220529092403.png]]
+>![Pastedimage20220529092403.png](img/Pastedimage20220529092403.png)
 >**3D schematics of Polarimetry setup** 
 
 ## Crystal Structure
@@ -80,7 +75,7 @@ This subpanel specifies the dielectric permittivity in matrix form for the funda
 This subpanel specifies the SHG tensor (in Voigt notation matrix form)
 - Note that constraints due to symmetry (specified via Point Group in the subpanel `Crystal Structure`) are imposed automatically. 
 ## Case Studies 
->!![[img/Pasted image 20220529094133.png]]
+>![[img/Pasted image 20220529094133.png]]
 >**Case Studies subpanel** 
 
 This subpanel provides a few case studies for reflective SHG experiments on common nonlinear optical crystals.
@@ -98,4 +93,18 @@ This subpanel helps to store a set of user-defined materials properties (includi
 - First provide inputs to all the properties for Materials 1, click update to compute and store the results into Preset 1. 
 - Then provide inputs to all the properties for Materials 2, click update to compute and store the results into Preset 2. 
 - And so on for Materials 3, 4 and Preset 3, 4. 
+---
+The preset buttons enable you to input a set of material properties, save them to a given preset, and then re-input those properties later with one click. Only material properties, and not polarimetry or experimental geometry settings, are saved. Specifically, the following inputs are saved to each preset:
+
+1. All "Crystal Structure" values (including point group)
+2. All "Crystal Orientation" values (including the choice to input miller indices or crystal physics directions)
+3. Dielectric tensors and SHG tensors
+
+To use the preset functionality, first input these material properties in the sections from "Crystal Structure" to "SHG Tensor". Then, press the green "Update" button in the top right corner of the manipulate window.
+
+After you do this, pressing any of the preset buttons labeled "Preset 1" through "Preset 4" which you have not previously pressed will save those properties to that preset option. When a preset is saved, the button will appear blue. In addition, a text input field for that preset will appear below the buttons so you can type a label for that set of properties. This label will also be saved so that you don't forget which preset corresponds to each saved material. When you want to use a material's preset information for SHAARP calculations, simply press the button corresponding to the appropriate material. All of the information in the input sections above will be automatically updated. By clicking the green "Update" button, the output plots and equations will be recalculated with the new material properties.
+
+There is a blue button below the preset buttons and labels called "Show Preset Information". If you click this button, it will display which presets are currently set and some brief instructions on how to use the preset functionality. The information about presets that are currently set is not dynamically updated here, but if you click "Hide" and then display this text again, it will update to display the correct presets.
+
+When you want to remove presets, click the "Clear Presets" button. All preset information will be removed, including material properties and labels. Be careful not to do this if you have information saved that you do not want to re-enter. Currently there is no way to clear individual preset values.
  

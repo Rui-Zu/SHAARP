@@ -1,7 +1,3 @@
-[Home](index) 
-[Previous](examples.md)
-[Next](FAQ.md)  
-___
 # Simulation and Analytical Methods
 ## Optical Geometry
 

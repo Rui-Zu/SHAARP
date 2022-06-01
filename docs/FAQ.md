@@ -10,7 +10,9 @@ ___
 - Q: Main Panel does not show up 
 - A: It usually takes 20 ~ 30s for the initialization depending on the configuration of hardware. 
 
-
+## Warning message of SHAARP 
+- Q: Why there are warning signs before progress bar 
+- A: This is because the enviroment is not properly initialized. Go to <span style="background-color: #D3D3D3">Evaluation</span> -> <span style="background-color: #D3D3D3">Evaluate Notebooke</span>. The warning sign should disappear.
 ___
 [Home](index) 
 [Previous](method.md)

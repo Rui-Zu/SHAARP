@@ -1,8 +1,3 @@
-[Home](index) 
-[Previous](output.md)
-[Next](5_methods)
-___
-
 # Examples
 
 ## $GaAs(111)$ at 800nm
