@@ -13,7 +13,7 @@ As a very brief primer, the SHG interaction is given by $P_i^{2\omega} = d_{ijk}
 
 One important application of the code is to provide analytical expressions to fit experimentally measured polar plots for a nonlinear single crystal.  By such fitting, one can determine the point group symmetry, as well as determine the various nonlinear coefficients by comparing with a standard crystal whose nonlinear coefficients are known. A second application is to quickly generate the expected SHG polarimetry response from crystals whose linear and nonlinear properties are already known.
 
-Follow the steps below to get started with the package. For more detailed information on **#SHAARP.****_si_**, please refer to the [manual](https://shaarp.readthedocs.io/en/latest/).
+Follow the steps below to get started with the package. For more detailed information on SHAARP._si_, please refer to the [manual](https://shaarp.readthedocs.io/en/latest/).
 
 ## Installation 
 `#SHAARP.si` is written as a notebook using Wolfram Language and need to run with _Mathematica®_
@@ -24,7 +24,7 @@ Follow the steps below to get started with the package. For more detailed inform
 1. Unzip the file and open the `SHAARP_si.nb`. 
 	- Note: It is recommended to keep all the files in the same directory to access the full features of `SHAARP.si`
 	- Make sure if the Dynamic Evaluation has been enbled (it is enabled by default).
-2. From the menu `Evaluate` -> `Evaluate Notebook
+2. From the menu `Evaluate` -> `Evaluate Notebook`
 	- Note: This process will clear out all the definitions from other notebooks and enable the "Notation" package for the analytical solutions.
 3. After ~30s waiting time for initialization, you will see the main panel: 
    ![Interface.png](docs/img/Interface.png)
