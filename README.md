@@ -5,220 +5,124 @@
 ![License](https://img.shields.io/github/license/Rui-Zu/SHAARP)
 ![GitHub Size](https://img.shields.io/github/repo-size/Rui-Zu/SHAARP)
 
-**SHAARP**._si_ is an open-source package for deriving and simulating reflected optical second harmonic generation (SHG) from a single interface (_si_), typically the surface of a single crystal. Optical SHG describes the process where two photons of frequency interact with a nonlinear medium (a crystal) to create a photon at 2$\omega$, so called the SHG process.  (A followup package for multiple interfaces is currently being developed).
+**SHAARP**_ _si_ is an open-source package for deriving and simulating reflected optical second harmonic generation (SHG) from a single interface (_si_), typically the surface of a single crystal. Optical SHG describes the process where two photons of frequency interact with a nonlinear medium (a crystal) to create a photon at 2$\omega$, so called the SHG process.  (A followup package for multiple interfaces is currently being developed).
 
 This package builds in the most general approach to both analytically and numerically solving the surface SHG response of a single crystal surface with arbitrary crystal symmetry, arbitrary orientation and a complex dielectric function (complex refractive indices).
 
-Some of the main features of MathJax include:
+As a very brief primer, the SHG interaction is given by $P_i^{2\omega} = d_{ijk}E_j^{\omega}E_k^{\omega}$, where $E$ are the fundamental electric fields of photons at $\omega$ frequency, $P$ is the nonlinear polarization at $2\omega$ frequency created inside the crystal, and $d_{ijk}$ is a third rank polar tensor describing the nonlinear optical property of the crystal. The subscripts _i, j, k_ are dummy subscripts denoting the polarization directions of the respective quantities; each of these indices can be 1, 2, or 3, that represent the orthogonal _crystal physics_ axes denoted in SHAARP as $(Z_1,Z_2,Z_3)$. The SHG tensor, $d_{ijk}$, thus has 3x3x3=27 terms; however crystal symmetry can significantly reduce the number of non-zero terms in the tensor. As described in the manual in detail, besides the _crystal physics_ axes, there are four other sets of axes we will use in this package, namely, the crystallographic axes $(a,b,c)$, the lab axes, $(L_1,L_2,L_3)$, principal axes, $(Z_1^{princial},Z_2^{principal},Z_3^{principal})$ and the polarization axes (_s_, _p_); relationships between them is important to understand in order to usefully employ this package in experiments.
 
-- High-quality display of LaTeX, MathML, and AsciiMath notation in HTML pages
+One important application of the code is to provide analytical expressions to fit experimentally measured polar plots for a nonlinear single crystal.  By such fitting, one can determine the point group symmetry, as well as determine the various nonlinear coefficients by comparing with a standard crystal whose nonlinear coefficients are known. A second application is to quickly generate the expected SHG polarimetry response from crystals whose linear and nonlinear properties are already known.
 
-- Supported in most browsers with no plug-ins, extra fonts, or special
-  setup for the reader
+Follow the steps below to get started with the package. For more detailed information on **#SHAARP.****_si_**, please refer to the [manual](https://shaarp.readthedocs.io/en/latest/).
 
-- Easy for authors, flexible for publishers, extensible for developers
+## Installation 
+`#SHAARP_si` is written as a notebook using Wolfram Language and need to run with _Mathematica®_
+- OS: Windows 10/Mac ==?== 
+- [Mathematica 12.0+](https://user.wolfram.com/portal/myProducts.html) 
 
-- Supports math accessibility, cut-and-paste interoperability, and other
-  advanced functionality
+## Open the # SHAARP._si_.nb in the _Mathematica®_ software on your computer
+1. Unzip the file and open the <span style="background-color: #D3D3D3">SHAARP_si.nb</span>. 
+	- Note: It is recommended to keep all the files in the same directory to access the full features of SHAARP._si_
+	- Make sure if the Dynamic Evaluation has been enbled (it is enabled by default).
+2. From the menu <span style="background-color: #D3D3D3">Evaluate</span> -> <span style="background-color: #D3D3D3">Evaluate Notebook</span>
+	- Note: This process will clear out all the definitions from other notebooks and enable the "Notation" package for the analytical solutions.
+3. After ~30s waiting time for initialization (==we need to improve it!==), you will see the main panel: 
+   ![Interface.png](docs/img/Interface.png)
+4. The main panel contains four parts
+	- [Input panels](input.md) specify all the input parameters 
+	- [Output panels](output.md) give the output diagrams and equations 
+	- Progress bar show the progress after clicking the Update button 
+	- Update button execute the program by clicking it  
 
-- Powerful API for integration with other web applications
+## Try preset demos
+- On the left-hand panel (LHP), scroll down to “<span style="background-color: #D3D3D3">Case Studies</span>”.
+- Click on <span style="background-color: #D3D3D3">LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>. All the parameters will be autofilled for this case.
+- In the “<span style="background-color: #D3D3D3">Functionality</span>”, Select “<span style="background-color: #D3D3D3">SHG Simulation</span>”. Leave the other LHP settings in their default settings.
+- At the top R.H. corner, click “<span style="background-color: #9CCC65">Update</span>". (Please be patient, it may take a few seconds; Watch the progress bar on the top to track when the calculation is done.)
+- The first row of the right-hand panel (RHP) should depict the SHG polar plots ($I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$) for the default settings of polarization and plane of incidence (PoI) in the LHP.
+- Placing the cursor on the polar plots,and you can view a detailed description of the plots.
 
-See <http://www.mathjax.org/> for additional details about MathJax,
-and <https://docs.mathjax.org> for the MathJax documentation.
+Now you have obtained your first numerical simulation of SHG polarimetry from a single interface. Next, let’s explore various polarization settings for the fundamental ($\omega$) and SHG ($2\omega$) waves.
 
-## MathJax Components
+## Polarization Settings
+- The definition of the incident polarization (at frequency $\omega$) is given as $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta} )$, where $E_p$ and $E_s$ are the _p_ and _s_ polarization components that are, respectively, parallel to and perpendicular to the PoI. The PoI is a plane formed by the incident wavevector, $\pmb{k}^{\omega}$, and the normal to the crystal surface. The polarization of the SHG wave (at frequency $2\omega$ is measured using a linear polarizer at an angle $\psi$, where $\psi=0^o$ and $90^o$ corresponds to the _p_-polarized and _s_-polarized SHG light, respectively.
+- In the “<span style="background-color: #D3D3D3">Polarimetry Settings</span>”, you can vary
+	1. the incident angle ( $\theta^i$, in the range between $0-90^o$ ),
+	2. the incident ($\omega$) polarization direction ($\varphi$)
+	3. output ($2\omega$) polarization direction ($\psi$), and
+	4. the ellipticity of incident wave ($\Delta\delta$)
+- In the “<span style="background-color: #D3D3D3">Incident Angle &theta;<sup>i</sup>(<sup>o</sup>)</span>”, set incident angle (at frequency $\omega$)  to $0^o$, and press “<span style="background-color: #9CCC65">Update</span>” to evaluate the changes. In the first row on the RHP, the polarized SHG response will change. The change of incident angle will also be revealed in the “**Probing Geometry**” plot in the second row of the RHP.
+- Now set the “<span style="background-color: #D3D3D3">Output SHG Polarization</span>” to “<span style="background-color: #D3D3D3">Fix Analyzer</span>”. A “<span style="background-color: #D3D3D3">Fixed Analyzer Angle</span>” option will appear, allowing you to select a specific output polarization direction. Keep the angle at $0^o$ for now (corresponding to _p_-polarization), and click “<span style="background-color: #9CCC65">Update</span>”. The SHG polar plots will change accordingly, and you can view the change to the polarization setting in the **Polarization Relations** plot in the second row of the RHP.
+- Now click "<span style="background-color: #D3D3D3">3D Schematic</span>" and then “<span style="background-color: #9CCC65">Update</span>”. The <span style="background-color: #D3D3D3">3D Schematic</span> option will allow you to visualize the **Probing Geometry** and **Polarization Relations** in 3D, and you can change the view direction by dragging the plots.
+- You can also change the incident polarization. Try playing with the polarization settings and press “<span style="background-color: #9CCC65">Update</span>” to generate new plots.
 
-MathJax version 3 uses files called *components* that contain the
-various MathJax modules that you can include in your web pages or
-access on a server through NodeJS.  Some components combine all the
-pieces you need to run MathJax with one or more input formats and a
-particular output format, while other components are pieces that can
-be loaded on demand when needed, or by a configuration that specifies
-the pieces you want to combine in a custom way.  For usage
-instructions, see the [MathJax documentation](https://docs.mathjax.org).
+Now you have some experience in setting up the polarization conditions for both fundamental and the SHG waves, in viewing your polarization settings using Probing Geometry and Polarization Relations plots, and generating different SHG polarimetry plots. Next, we will play with the crystal settings.
 
-Components provide a convenient packaging of MathJax's modules, but it
-is possible for you to form your own custom components, or to use
-MathJax's modules directly in a node application on a server.  There
-are [web examples](https://github.com/mathjax/MathJax-demos-web)
-showing how to use MathJax in web pages and how to build your own
-components, and [node
-examples](https://github.com/mathjax/MathJax-demos-node) illustrating
-how to use components in node applications or call MathJax modules
-directly.
+## Crystal Structure and Crystal Orientation
+- In the “<span style="background-color: #D3D3D3"><b>Crystal Structure Section</b></span>”, the user has to specify the point group symmetry and the lattice parameters in order to properly determine the nonvanishing SHG coefficients as well the relevant crystal plane orientations. As an example, LiNbO<sub>3</sub> has the point group _3m_ and its lattice parameters have been well studied. Presently, leave the default settings as they are from selecting the Case Studies “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>”.
+- “<span style="background-color: #D3D3D3"><b>Crystal Orientations</b></span>” determines how the single crystal is oriented for the study with respect to the lab coordinates. It requires two user inputs:
+	1. The orientation of the crystal plane of surface
+	2. The orientation of the plane of incidence(PoI)
+- These two pieces of information can be input in one of two ways: (a) By using Miller indices, (hkl), by clicking “<span style="background-color: #D3D3D3">Use Miller Indices (hkl)</span>”. (b) By specifying the crystal physics axes with respect to the lab coordinates by clicking “<span style="background-color: #D3D3D3">Use crystal physics direction</span>.”
+Note that $L_2$ lab axis is always fixed be perpendicular to the PoI.
+- For the “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>” case, the default orientation under “<span style="background-color: #D3D3D3">Use Miller Indices (hkl)</span>” is set such that $(110)$ is the surface plane, and $[1 \overline{1} 0]$ is perpendicular to the PoI. Hovering your mouse over <span style="background-color: #D3D3D3">?(hkl)</span> describes the relation between 4-index and 3-index Miller indices for the trigonal and hexagonal systems.
+- The “<span style="background-color: #D3D3D3">Use crystal physics direction</span>” should be automatically populated for the preset “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>”.  Otherwise, by hovering over the <span style="background-color: #D3D3D3">?crystal physics</span> specifies the relationship between the crystal physics and crystallographic axes for the selected point group. You can use this information to directly evaluate and input this information as well.
+- Select <span style="background-color: #D3D3D3">3D Schematic</span> in the “<span style="background-color: #D3D3D3">Polarimetry Settings</span> and press “<span style="background-color: #9CCC65">Update</span>”. You can then view the crystal orientations $(Z_1,Z_2,Z_3)$ in relation to the lab frame $(L_1,L_2,L_3)$ in the 3D **Probing Geometry** plot. You can click, hold and rotate the 3D schematics to get a 3D perspective.
+!!! note
+	 Note that for the “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>” case, $Z_3$ is parallel to $L_1$ in 3D **Probing Geometry** plot.
+- Next, change the h,k, and l under the “<span style="background-color: #D3D3D3">[hkl] -> Direction Perpendicular to the Plane of Incidence</span>” to 0, 0, and 1. Press “<span style="background-color: #9CCC65">Update</span>” to update the calculation. The change means that you have rotated your crystal 90 degrees in-plane.
+!!! note
+	 Note that $Z_3$ is now parallel to $L_2$ in the 3D **Probing Geometry** plot.	 
+ 
+Now you have finished the tutorial on the orientations. Detailed discussions about various coordinate systems and orientations can be found in the manual. Question marks next to “<span style="background-color: #D3D3D3">Use Miller Indices (hkl)</span>” can help you quickly refer to the definition of $(Z_1,Z_2,Z_3)$ based on the point group you have selected.
 
-## What's in this Repository
+## Linear Optical Tensors
+In this section, you will need to provide either complex refractive index $\widetilde{n}$ or the complex relative dielectric permittivity $\widetilde\epsilon$ for both the $\omega$ and $2\omega$ frequencies.
+!!! note
+	 These tensors are property tensors specificed in the crystal physics coordinates and _do not_ need to be changed when changing the crystal orientation.
 
-This repository contains only the component files for MathJax, not the
-source code for MathJax (which are available in a separate [MathJax
-source repository](https://github.com/mathjax/MathJax-src/)).  These
-component files are the ones served by the CDNs that offer MathJax to
-the web.  In version 2, the files used on the web were also the source
-files for MathJax, but in version 3, the source files are no longer on
-the CDN, as they are not what are run in the browser.
+- You can change the <span style="background-color: #D3D3D3">complex refractive index</span> at $2\omega$ to complex values. You can change  $2.2529$,  $2.2529$ and $2.1604$ to $2.2529+I$,  $2.2529+I$ and $2.1604+2I$. Press “<span style="background-color: #9CCC65">Update</span>” to update the calculation.
+!!! note
+	 Note, use capital $I$ to represent the imaginary part in Mathematica.
+- Now the polar plots are updated with a real refractive index tensor at $\omega$ but a complex refractive tensor at $2\omega$. Next, try making the dielectric tensor at $\omega$ to be complex as well.
 
-The components are stored in the `es5` directory, and are in ES5 format
-for the widest possible compatibility.  In the future, we may make an
-`es6` directory containing ES6 versions of the components.
+## SHG Tensor ($d_{ijk}$)
+- Based on the point group symmetry you have selected in the “<span style="background-color: #D3D3D3">Crystal Structure</span>”, the nonvanishing terms in the SHG tensor can be uniquely determined and provided in the Voigt notation<sup>1</sup>.
+- The default setting for the “<span style="background-color: #D3D3D3">LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>”provides the nonlinear coefficients of LiNbO<sub>3</sub> measured using the fundamental wavelength at 800nm. You can try to change those values and press “<span style="background-color: #9CCC65">Update</span>” to evaluate the influence on the SHG polar plots.
 
-## Installation and Use
+Now you have finished a quick tutorial on the input panels and performing the SHG simulation. SHAARP not only provides simulations of the polarized SHG response but also features in generating analytical expressions for fitting experimentally polar plots for determining nonlinear SHG coefficients and the crystal symmetry.
 
-### Using MathJax components from a CDN on the web
+## Partial Analytical Expressions/ Full Analytical Expressions
+<span style="background-color: #D3D3D3"><b>Partial analytical expressions</b></span> generate analytical expressions with only SHG coefficients as the unknown variables, providing a reliable way to experimentally determine SHG coefficients by fitting these expressions to the experimental polar plots. In this function, the numerical values of linear optical tensors, orientation, and the incident angle will be provided by the user and assumed to be known while the unknown SHG coefficients are left as variables.
+On the other hand, the <span style="background-color: #D3D3D3"><b>full analytical expressions</b></span> provides the complete variables-based analytical expressions where the linear and nonlinear optical properties, as well as the various polarization and incidence angles of measurement are assumed to be variables. This method will provide a comprehensive expression for the wave mixing in the nonlinear medium.
 
-If you are loading MathJax from a CDN into a web page, there is no
-need to install anything.  Simply use a `script` tag that loads
-MathJax from the CDN.  E.g.,
+### Partial Analytical Expressions
+- Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
+- Click <span style="background-color: #D3D3D3"><b>Partial Analytical Expressions</b></span> in the <span style="background-color: #D3D3D3"><b>Functionality</b></span> section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
+- The RHP will display the final intensity expressions of $I^{2\omega}(\phi,\psi)$, and $I^{2\omega}(\phi,\psi+\pi/2)$.
+- The <span style="background-color: #D3D3D3"><b>Copy</b></span> button to the left of the expressions will allow you directly copy the expression and paste it into another document such as a Mathematica notebook, or Microsoft files.
 
-``` html
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-```
+### Full Analytical Expressions
+- Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO3 (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
+- Click <span style="background-color: #D3D3D3"><b>Full Analytical Expressions</b></span> in the <span style="background-color: #D3D3D3"><b>Functionality</b></span> section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
+!!! note
+	This calculation could take up to a few minutes due to the amount of calculations involved. Please be patient! The progress bar shown at the top of the GUI helps keep track of the progress in the calculation.
+- The RHP will display the final intensity expressions of $I^{2\omega}(\phi,\psi)$, and $I^{2\omega}(\phi,\psi+\pi/2)$.
+- The <span style="background-color: #D3D3D3"><b>Copy</b></span> button to the left of the expressions will allow you directly copy the expression and paste it into another document such as a Mathematica notebook, or Microsoft files.
+- The analytical expressions are provided in sequence. For example, $E^{2\omega}(\phi,\psi)$ is expressed using <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span>_._ The expressions for the <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span> will also be provided in the output expressions as a function of the material property coefficients and the measurement geometry.
 
-See the [MathJax
-documentation](https://docs.mathjax.org/en/latest/index.html#browser-components),
-the [MathJax Web Demos](https://github.com/mathjax/MathJax-demos-web),
-and the [MathJax Component
-Repository](https://github.com/mathjax/MathJax-demos-web) for more information.
+## Defining New Presets
+ <span style="background-color: #D3D3D3"><b>Materials Properties Preset Values</b></span>provides a way to store your input information so that you can review those input later. It works similarly to buttons in the  <span style="background-color: #D3D3D3"><b>Case Study</b></span> but allows users to customize input settings based on the need. This setting is particularly useful if you are varying some input settings to explore the influence and changes towards SHG response.
+- Take LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, to use the default parameters. Click <span style="background-color: #D3D3D3"><b>SHG Simulations</b></span> in the Functionality section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
+- Click “<span style="background-color: #D3D3D3"><b>Preset 1</b></span>” to store the input information including orientations, crystal structure, linear optical tensor values, and SHG tensor values. You can set labels for your presets and enter “LNO” in the “<span style="background-color: #D3D3D3"><b>Preset 1 Label</b></span>”. Use “<span style="background-color: #9CCC65">Update</span>” to secure the settings. Hovering cursors on preset buttons will provide more information about preset values.
+- Now, you can click <span style="background-color: #D3D3D3"><b>GaAs(111)</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span> and press “<span style="background-color: #9CCC65">Update</span>” to evaluate different materials. Go to “<span style="background-color: #D3D3D3"><b>Preset 2</b></span>” and use “<span style="background-color: #9CCC65">Update</span>” to make changes to the settings.
+- By pressing “<span style="background-color: #D3D3D3"><b>Preset 1</b></span>”, the input information will direct you back to the settings for preset 1. You can also click “<span style="background-color: #D3D3D3"><b>Preset 2</b></span>” to return to saved settings for preset 2.
+- If you click “<span style="background-color: #D3D3D3"><b>Clear Presets</b></span>”, this process will erase all saved settings for all four presets. You can redefine presets after clearing the definition.
 
-### Hosting your own copy of the MathJax Components
-
-If you want to host MathJax from your own server, you can do so by
-installing the `mathjax` package using `npm` and moving the `es5`
-directory to an appropriate location on your server:
-
-``` bash
-npm install mathjax@3
-mv node_modules/mathjax/es5 <path-to-server-location>/mathjax
-```
-
-Note that we are still making updates to version 2, so include `@3`
-when you install, since the latest chronological version may not be
-version 3.
-
-Alternatively, you can get the files via GitHub:
-
-``` bash
-git clone https://github.com/mathjax/MathJax.git mj-tmp
-mv mj-tmp/es5 <path-to-server-location>/mathjax
-rm -rf mj-tmp
-```
-
-Then (in either case) you can use a script tag like the following:
-
-``` html
-<script id="MathJax-script" async src="<url-to-your-site>/mathjax/tex-chtml.js"></script>
-```
-
-where `<url-to-your-site>` is replaced by the URL to the location
-where you moved the MathJax files above.
-
-See the
-[documentation](https://docs.mathjax.org/en/latest/web/hosting.html)
-for details.
-
-### Using MathJax components in a node application
-
-To use MathJax components in a node application, install the `mathjax` package:
-
-``` bash
-npm install mathjax@3
-```
-
-(we are still making updates to version 2, so you should include `@3`
-since the latest chronological version may not be version 3).
-
-Then require `mathjax` within your application:
-
-```js
-require('mathjax').init({ ... }).then((MathJax) => { ... });
-```
-    
-where the first `{ ... }` is a MathJax configuration, and the second
-`{ ... }` is the code to run after MathJax has been loaded.  E.g.
-
-```js
-require('mathjax').init({
-  loader: {load: ['input/tex', 'output/svg']}
-}).then((MathJax) => {
-  const svg = MathJax.tex2svg('\\frac{1}{x^2-1}', {display: true});
-  console.log(MathJax.startup.adaptor.outerHTML(svg));
-}).catch((err) => console.log(err.message));
-```
-
-**Note:** this technique is for node-based application only, not for
-browser applications.  This method sets up an alternative DOM
-implementation, which you don't need in the browser, and tells MathJax
-to use node's `require()` command to load external modules.  This
-setup will not work properly in the browser, even if you webpack it or
-bundle it in other ways.
-
-See the
-[documentation](https://docs.mathjax.org/en/latest/index.html#server-nodejs)
-and the [MathJax Node
-Repository](https://github.com/mathjax/MathJax-demos-node) for more details.
-
-## Reducing the Size of the Components Directory
-
-Since the `es5` directory contains *all* the component files, so if
-you are only planning one use one configuration, you can reduce the
-size of the MathJax directory by removing unused components. For
-example, if you are using the `tex-chtml.js` component, then you can
-remove the `tex-mml-chtml.js`, `tex-svg.js`, `tex-mml-svg.js`,
-`tex-chtml-full.js`, and `tex-svg-full.js` configurations, which will
-save considerable space.  Indeed, you should be able to remove
-everything other than `tex-chtml.js`, and the `input/tex/extensions`,
-`output/chtml/fonts/woff-v2`, `adaptors`, `a11y`, and `sre`
-directories.  If you are using the results only on the web, you can
-remove `adaptors` as well.
-
-If you are not using A11Y support (e.g., speech generation, or
-semantic enrichment), then you can remove `a11y` and `sre` as well
-(though in this case you may need to disable the assistive tools in
-the MathJax contextual menu in order to avoid MathJax trying to load
-them when they aren't there).
-
-If you are using SVG rather than CommonHTML output (e.g., `tex-svg.js`
-rather than `tex-chtml.js`), you can remove the
-`output/chtml/fonts/woff-v2` directory.  If you are using MathML input
-rather than TeX (e.g., `mml-chtml.js` rather than `tex-chtml.js`),
-then you can remove `input/tex/extensions` as well.
+## More resources 
+- Detailed description of the method can be found [here](methods.md)  
+- Some specific cases can be found [here](examples.md)  
 
 
-## The Component Files and Pull Requests
-
-The `es5` directory is generated automatically from the contents of the
-MathJax source repository.  You can rebuild the components using the
-command
-
-``` bash
-npm run make-es5 --silent
-```
-
-Note that since the contents of this repository are generated
-automatically, you should not submit pull requests that modify the
-contents of the `es5` directory.  If you wish to submit a modification
-to MathJax, you should make a pull request in the [MathJax source
-repository](https://github.com/mathjax/MathJax-src).
-
-## MathJax Community
-
-The main MathJax website is <http://www.mathjax.org>, and it includes
-announcements and other important information.  A [MathJax user
-forum](http://groups.google.com/group/mathjax-users) for asking
-questions and getting assistance is hosted at Google, and the [MathJax
-bug tracker](https://github.com/mathjax/MathJax/issues) is hosted
-at GitHub.
-
-Before reporting a bug, please check that it has not already been
-reported.  Also, please use the bug tracker (rather than the help
-forum) for reporting bugs, and use the user's forum (rather than the
-bug tracker) for questions about how to use MathJax.
-
-## MathJax Resources
-
-* [MathJax Documentation](https://docs.mathjax.org)
-* [MathJax Components](https://github.com/mathjax/MathJax)
-* [MathJax Source Code](https://github.com/mathjax/MathJax-src)
-* [MathJax Web Examples](https://github.com/mathjax/MathJax-demos-web)
-* [MathJax Node Examples](https://github.com/mathjax/MathJax-demos-node)
-* [MathJax Bug Tracker](https://github.com/mathjax/MathJax/issues)
-* [MathJax Users' Group](http://groups.google.com/group/mathjax-users)
+## Reference
+1. Denev, S. A., Lummen, T. T. A., Barnes, E., Kumar, A. & Gopalan, V. Probing Ferroelectrics Using Optical Second Harmonic Generation. _Journal of the American Ceramic Society_ **94**, 2699–2727 (2011). 
