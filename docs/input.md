@@ -106,5 +106,5 @@ After you do this, pressing any of the preset buttons labeled "Preset 1" through
 
 There is a blue button below the preset buttons and labels called "Show Preset Information". If you click this button, it will display which presets are currently set and some brief instructions on how to use the preset functionality. The information about presets that are currently set is not dynamically updated here, but if you click "Hide" and then display this text again, it will update to display the correct presets.
 
-When you want to remove presets, click the "Clear Presets" button. All preset information will be removed, including material properties and labels. Be careful not to do this if you have information saved that you do not want to re-enter. Currently there is no way to clear individual preset values.
+When you want to remove presets, click the "Clear Presets" button. All preset information will be removed, including material properties and labels. Be careful not to do this if you have information saved that you do not want to re-enter.
  
