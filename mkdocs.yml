@@ -26,5 +26,6 @@ nav:
     - Output Results: output.md
     - Examples: examples.md
     - Frequently Asked Questions (FAQ): FAQ.md
+    - Table of Symbols: table.md
 
 theme: readthedocs
