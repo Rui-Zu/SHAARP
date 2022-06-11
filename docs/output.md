@@ -1,8 +1,3 @@
-[Home](index) 
-[Previous](input.md)
-[Next](examples.md)
-___
-
 # Output Results
 The content in the Output Panel depends on which mode is chosen in the Functionalities of the [Input Panels](input). 
 ## Numerical Simulation 
@@ -34,9 +29,3 @@ This panel contains partially analytical expression of output variables assuming
 This panel contains fully analytical expression of output variables assuming known reflective and refractive angles.  
 - The meaning of all the symbols are given in the [Table](table of symbols.md). 
 - One can copy the analytical expression by click the Copy button on the left. 
-
-
-___
-[Home](index) 
-[Previous](input.md)
-[Next](examples.md)
