@@ -71,7 +71,7 @@ In this section, you will need to provide either complex refractive index $\wide
 	 Note, use capital $I$ to represent the imaginary part in Mathematica.
 - Now the polar plots are updated with a real refractive index tensor at $\omega$ but a complex refractive tensor at $2\omega$. Next, try making the dielectric tensor at $\omega$ to be complex as well.
 
-## SHG Tensor ($d_{ijk}$)
+## SHG Tensor (<i>d<sub>ijk</sub></i>)
 - Based on the point group symmetry you have selected in the “<span style="background-color: #D3D3D3">Crystal Structure</span>”, the nonvanishing terms in the SHG tensor can be uniquely determined and provided in the Voigt notation<sup>1</sup>.
 - The default setting for the “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>”provides the nonlinear coefficients of LiNbO<sub>3</sub> measured using the fundamental wavelength at 800nm. You can try to change those values and press “<span style="background-color: #9CCC65">Update</span>” to evaluate the influence on the SHG polar plots.
 
