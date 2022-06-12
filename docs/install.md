@@ -109,7 +109,7 @@ On the other hand, the <span style="background-color: #D3D3D3"><b>full analytica
 - Some specific cases can be found [here](examples.md)  
 
 
-## [Frequently asked questions](FAQ.md) 
+## [Frequently asked questions(FAQ)](FAQ.md)
 
 ## Reference
 1. Denev, S. A., Lummen, T. T. A., Barnes, E., Kumar, A. & Gopalan, V. Probing Ferroelectrics Using Optical Second Harmonic Generation. _Journal of the American Ceramic Society_ **94**, 2699–2727 (2011). 
