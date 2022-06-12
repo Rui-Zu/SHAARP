@@ -97,6 +97,7 @@ $$
 $$
 
 where **C** is the field strength to be determined from **Equation (4)** for a given $\pmb{P}^{2\omega}$. By substituting **Eq. (3)** and **(5)** into **Eq. (4)**, the field strengths of the three inhomogeneous waves can be explicitly calculated with the associated second-order optical susceptibilities. Accordingly, the $\pmb{H}^{2\omega}$ for the three inhomogeneous waves can be obtained by
+
 $$
 \begin{align}
 \pmb{H}^{2\omega}=\frac{1}{\omega\mu_0}\mu^{-1}\pmb{k}^{2\omega}\times \pmb{E}^{2\omega}\hspace{3em}(6)
