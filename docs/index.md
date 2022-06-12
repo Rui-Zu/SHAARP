@@ -22,3 +22,4 @@ One important application of the code is to provide analytical expressions to fi
 ### [Outputs](output.md)
 ### [Examples](examples.md)
 ### [Frequent Asked Questions](FAQ.md)
+### [Table of Symbols](table.md)
