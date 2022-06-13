@@ -1,5 +1,5 @@
 # Input Parameters
-This section introduces each subpanel of the input panel. Each subpanel is folderable and can be expanded of collapsed bysingle- clicking the bottum ![[img/Pasted image 20220529090158.png]] or ![[img/Pasted image 20220529090221.png]] at the upper left corner. 
+This section introduces each subpanel of the input panel. Each subpanel is folderable and can be expanded of collapsed bysingle- clicking the bottum ![Pastedimage20220529090158.png](img/Pastedimage20220529090158.png) or ![Pastedimage20220529090221.png](img/Pastedimage20220529090221.png) at the upper left corner. 
 ## Functionality
 >![Pastedimage20220529085914.png](img/Pastedimage20220529085914.png)
 >**Functionality subpanel**
@@ -37,12 +37,15 @@ This subpanel input parameters related to the geometric setup for the virtual po
 - Schematics 
 	- One can choose showing either 2D Schematics or 3D Schematics for the geometric setup and the visual definitions of the angles. 
 >![Pastedimage20220529092357.png](img/Pastedimage20220529092357.png)
+>
 >**2D schematics of Polarimetry setup**
+>
 >![Pastedimage20220529092403.png](img/Pastedimage20220529092403.png)
+>
 >**3D schematics of Polarimetry setup** 
 
 ## Crystal Structure
->![[img/Pasted image 20220529092912.png]]
+>![Pastedimage20220529092912.png](img/Pastedimage20220529092912.png)
 >**Crystal Structure subpanel** 
 
 This subpanel specifies the crystallography of the material of interest. 

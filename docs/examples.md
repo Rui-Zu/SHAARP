@@ -48,4 +48,4 @@ Here, in the **geometry plot**, $(L_1,L_2,L_3)$ depicts the lab coordinate syste
 - The **Copy** button next to the equation allow direct copy of the equation to the clipboard.
 
 ## LiNbO<b><sub>3</sub></b>(110) at 800 nm
-Please refer to the [demo](install.md#Try preset demos) in [getting started](install.md) section for LiNbO<sub>3</sub> case.
+Please refer to the [demo](install.md#Try&nbsppreset&nbspdemos) in [getting started](install.md) section for LiNbO<sub>3</sub> case.

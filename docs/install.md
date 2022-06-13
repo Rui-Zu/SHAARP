@@ -5,7 +5,7 @@
 - If you already have a Wolfram account, you can log in through the [portal](https://account.wolfram.com/login) and download the software.
 
 ## Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer
-1. Unzip the file and open the `SHAARP_si.nb`. 
+1. Unzip the file and open the `SHAARP.si.nb`. 
 	- Note: It is recommended to keep all the files in the same directory to access the full features of `♯SHAARP.si`
 	- Make sure if the Dynamic Evaluation has been enbled (it is enabled by default).
 2. From the menu `Evaluate` -> `Evaluate Notebook`
@@ -79,7 +79,7 @@ Now you have finished a quick tutorial on the input panels and performing the SH
 
 ## Partial Analytical Expressions/ Full Analytical Expressions
 <span style="background-color: #D3D3D3"><b>Partial analytical expressions</b></span> generate analytical expressions with only SHG coefficients as the unknown variables, providing a reliable way to experimentally determine SHG coefficients by fitting these expressions to the experimental polar plots. In this function, the numerical values of linear optical tensors, orientation, and the incident angle will be provided by the user and assumed to be known while the unknown SHG coefficients are left as variables.
-On the other hand, the <span style="background-color: #D3D3D3"><b>full analytical expressions</b></span> provides the complete variables-based analytical expressions where the linear and nonlinear optical properties, as well as the various polarization and incidence angles of measurement are assumed to be variables. This method will provide a comprehensive expression for the wave mixing in the nonlinear medium.
+On the other hand, the <span style="background-color: #D3D3D3"><b>Full analytical expressions</b></span> provides the complete variables-based analytical expressions where the linear and nonlinear optical properties, as well as the various polarization and incidence angles of measurement are assumed to be variables. This method will provide a comprehensive expression for the wave mixing in the nonlinear medium.
 
 ### Partial Analytical Expressions
 - Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
@@ -94,7 +94,7 @@ On the other hand, the <span style="background-color: #D3D3D3"><b>full analytica
 	This calculation could take up to a few minutes due to the amount of calculations involved. Please be patient! The progress bar shown at the top of the GUI helps keep track of the progress in the calculation.
 - The RHP will display the final intensity expressions of $I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$.
 - The <span style="background-color: #D3D3D3"><b>Copy</b></span> button to the left of the expressions will allow you directly copy the expression and paste it into another document such as a Mathematica notebook, or Microsoft files.
-- The analytical expressions are provided in sequence. For example, $E^{2\omega}(\phi,\psi)$ is expressed using <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span>_._ The expressions for the <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span> will also be provided in the output expressions as a function of the material property coefficients and the measurement geometry.
+- The analytical expressions are provided in sequence. For example, $E^{2\omega}(\varphi,\psi)$ is expressed using <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span>_._ The expressions for the <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span> will also be provided in the output expressions as a function of the material property coefficients and the measurement geometry.
 
 ## Defining New Presets
  <span style="background-color: #D3D3D3"><b>Materials Properties Preset Values</b></span>provides a way to store your input information so that you can review those input later. It works similarly to buttons in the  <span style="background-color: #D3D3D3"><b>Case Study</b></span> but allows users to customize input settings based on the need. This setting is particularly useful if you are varying some input settings to explore the influence and changes towards SHG response.
