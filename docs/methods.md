@@ -5,7 +5,7 @@
 
 While rotating the incident polarization ($E$$^i$($\phi$)), polarized SH intensities are collected as a function of the azimuthal angle . **Fig. 1b** depicts the collection of _p_ and _s_ polarized SH intensities ($I_p^{2\omega} (\varphi)$ and $I_s^{2\omega} (\varphi)$) and **Fig. 1e** illustrate the SH intensities polarized both parallel and perpendicular to the incident fundamental polarization ($I$$_\parallel$$^2$$^\omega$ ($\varphi$) and $I$$_\perp$$^2$$^\omega$ ($\varphi$)) if projected in $s - p$ plane. Here,  _s_ and _p_ describes the electrical fields of electromagnetic waves within and perpendicular to the plane of incidence ($L_1 - L_3$ plane), respectively.
 
-The former geometry is commonly achieved with a rotating halfwave plate and fixed analyzer while the latter geometry can be achieved by simply rotating the crystal or rotating the halfwave plate and analyzer simultaneously. **Fig. 1c** and **f** demonstrate the SHG polar plots of GaAs (111) obtained at normal incident geometry which contain information of crystal symmetry, refractive indices at both  and  frequencies, and second-order nonlinear susceptibility.
+The former geometry is commonly achieved with a rotating halfwave plate and fixed analyzer, while the latter geometry can be achieved by simply rotating the crystal or rotating the halfwave plate and analyzer simultaneously. **Fig. 1c** and **f** demonstrate the SHG polar plots of GaAs (111) obtained at normal incident geometry which contain information of crystal symmetry, refractive indices at both $\omega$ and $2\omega$ frequencies, and second-order nonlinear susceptibility.
 
 
 >![MethodF1.png](img/MethodF1.png)
@@ -22,13 +22,13 @@ Looking at the atomic scale, the translation vectors of a unit cell of the cryst
 
 The $(Z_1,Z_2,Z_3)$ represent the _crystal_ _physics coordinate system_ (ZCS) in which the material property tensors are represented; they are always orthogonal and their orientation relative to (_a_, _b_, _c_) follows Newnham’s convention.
 
-The $(Z_1^{Principal},Z_2^{Principal},Z_3^{Principal})$ is the _principal coordinate system_ (PCS), where dielectric tensors or refractive index tensors are diagonalized; this coordinate system is also always orthogonal. For an isotropic or uniaxial structure, $(Z_1,Z_2,Z_3)\equiv (Z_1^{Principal},Z_2^{Principal},Z_3^{Principal})$ , which simplifies the overall problem. However, for a biaxial crystal, the PCS is _defined_ with the real part of the refractive indices along each axis following the ascending order, i.e.,$n(Z_1^{Principal})<n(Z_2^{Principal})<n(Z_3^{Principal})$ , while this is _not_ generally true in the crystal physics coordinate system. Henceforth, we will adopt the notation $n(Z_1^{Principal}) \equiv n_i^{\omega}$  for the Eigen values for the refractive index. In the PCS, the diagonal components of the complex _relative_ dielectric function can be conveniently written as $\epsilon^{Principal} \equiv \epsilon_i^{\omega}$ , where  is the vacuum permittivity. Therefore, the dielectric permittivity $\epsilon_i^{\omega}$ in the LCS can be expressed as
+The $(Z_1^{Principal},Z_2^{Principal},Z_3^{Principal})$ is the _principal coordinate system_ (PCS), where dielectric tensors or refractive index tensors are diagonalized; this coordinate system is also always orthogonal. For an isotropic or uniaxial structure, $(Z_1,Z_2,Z_3)\equiv (Z_1^{Principal},Z_2^{Principal},Z_3^{Principal})$, which simplifies the overall problem. However, for a biaxial crystal, the PCS is _defined_ with the real part of the refractive indices along each axis following the ascending order, i.e.,$n(Z_1^{Principal})<n(Z_2^{Principal})<n(Z_3^{Principal})$ , while this is _not_ generally true in the crystal physics coordinate system. Henceforth, we will adopt the notation $n(Z_1^{Principal}) \equiv n_i^{\omega}$ for the Eigen values for the refractive index. In the PCS, the diagonal components of the complex _relative_ dielectric function can be conveniently written as $\tilde\varepsilon =\varepsilon_0 \tilde{n}^2$, where $\varepsilon_0$ is the vacuum permittivity. Therefore, the dielectric permittivity $\varepsilon_i^{\omega}$ in the LCS can be expressed as
 
 $$
-\epsilon_i^{\omega} = a_{LZ}a_{ZP}\begin{pmatrix} n_1^{\omega}&0&0 \\\ 0&n_2^{\omega}&0 \\\ 0&0&n_3^{\omega}\end{pmatrix}^2(a_{LZ}a_{ZP})^{-1}\hspace{3em}(1)
+\varepsilon_i^{\omega} = a_{LZ}a_{ZP}\begin{pmatrix} n_1^{\omega}&0&0 \\\ 0&n_2^{\omega}&0 \\\ 0&0&n_3^{\omega}\end{pmatrix}^2(a_{LZ}a_{ZP})^{-1}\hspace{3em}(1)
 $$
 
-where  is the rotation matrix from ZCS to the LCS and  is the rotation matrix from the PCS to the ZCS, respectively.
+where $a_{LZ}$ is the rotation matrix from ZCS to the LCS and $a_{ZP}$ is the rotation matrix from the PCS to the ZCS, respectively.
 
 >![MethodF2.png](img/MethodF2.png)
 >Figure 2. Schematic of four coordinate systems used for a monoclinic structure. $(L_1,L_2,L_3)$, $(a,b,c)$, $(Z_1,Z_2,Z_3)$, and $(Z_1^{Principal},Z_2^{Principal},Z_3^{Principal})$ are the lab, crystallographic, crystal physics, and principal coordinate systems, respectively. Only the crystallographic coordinate system is non-orthogonal.
@@ -37,7 +37,7 @@ where  is the rotation matrix from ZCS to the LCS and  is the rotation matrix fr
 
 ## Waves in Nonlinear Medium
 
-When a monochromatic plane wave at frequency  is incident upon the interface, two refracted rays at frequency $\omega$ will propagate inside the medium with two orthogonal dielectric displacement vectors $\pmb{D}^{T,e,\omega}$ and $\pmb{D}^{T,o,\omega}$. The two waves can be both ordinary, or one ordinary and one extraordinary, depending on the optical class of the material and the propagation direction. Without loss of generality, we denote the two refracted waves by superscripts _T_, as shown in green in **Fig. 3**. The two fundamental waves correspond to the Eigen solutions of the wave equation at the linear frequency, $\omega$ , given in the LCS as
+When a monochromatic plane wave at frequency $\omega$ is incident upon the interface, two refracted rays at frequency $\omega$ will propagate inside the medium with two orthogonal dielectric displacement vectors $\pmb{D}^{T,e,\omega}$ and $\pmb{D}^{T,o,\omega}$. The two waves can be both ordinary, or one ordinary and one extraordinary, depending on the optical class of the material and the propagation direction. Without loss of generality, we denote the two refracted waves by superscripts _T_, as shown in green in **Fig. 3**. The two fundamental waves correspond to the Eigen solutions of the wave equation at the linear frequency, $\omega$, given in the LCS as
 
 $$
 \begin{align}
@@ -50,10 +50,10 @@ $$
 \end{align}
 $$
 
-where $\varepsilon_{L_iL_j}^{\omega}$ represents the dielectric permittivity tensor at frequency $\omega$ in the LCS, and the $\mu^{\omega}$ represents the magnetic permeability tensor in the LCS at $\omega$. Typically $\mu^{\omega}\approx\mu_0$, the vacuum permittivity is assumed, but this is not a requirement; the above formulation is quite general and can accommodate the full anisotropic magnetic permeability tensor of the material if so desired. In general, the anisotropic dielectric permittivity and magnetic permeability tensors of the medium are not diagonalized in the lab coordinates (LCS). Therefore, the non-collinearity between $\pmb{E}$ and $\pmb{D}$, as well as $\pmb{B}$ and $\pmb{H}$ results in two non-overlapping orthogonal relations ($\pmb{k}$, $\pmb{D}$, $\pmb{B}$) and ($\pmb{S}$, $\pmb{E}$, $\pmb{H}$). Here, $\pmb{k}$, $\pmb{D}$, $\pmb{B}$, $\pmb{S}$, $\pmb{E}$, and $\pmb{H}$ are wavevector, dielectric displacement, magnetic induction, Poynting vector, electric field and magnetic field intensity. Note that $\pmb{E}$ and $\pmb{H}$ are not necessarily normal to the wavevector $\pmb{k}$ inside the medium.
+where $\varepsilon_{L_iL_j}^{\omega}$ represents the dielectric permittivity tensor at frequency $\omega$ in the LCS, and the $\mu^{\omega}$ represents the magnetic permeability tensor in the LCS at $\omega$. Typically, $\mu^{\omega}\approx\mu_0$, the vacuum permittivity is assumed, but this is not a requirement; the above formulation is quite general and can accommodate the full anisotropic magnetic permeability tensor of the material if so desired. In general, the anisotropic dielectric permittivity and magnetic permeability tensors of the medium are not diagonalized in the lab coordinates (LCS). Therefore, the non-collinearity between $\pmb{E}$ and $\pmb{D}$, as well as $\pmb{B}$ and $\pmb{H}$ results in two non-overlapping orthogonal relations ($\pmb{k}$, $\pmb{D}$, $\pmb{B}$) and ($\pmb{S}$, $\pmb{E}$, $\pmb{H}$). Here, $\pmb{k}$, $\pmb{D}$, $\pmb{B}$, $\pmb{S}$, $\pmb{E}$, and $\pmb{H}$ are wavevector, dielectric displacement, magnetic induction, Poynting vector, electric field and magnetic field intensity. Note that $\pmb{E}$ and $\pmb{H}$ are not necessarily normal to the wavevector $\pmb{k}$ inside the medium.
 
 >![MethodF3.png](img/MethodF3.png)
->Figure 3. Schematic example of different waves at both  and  frequencies for the specific measurement geometry where the optic axis of a uniaxial crystal is chosen to lie in the incidence plane. (Note that ♯SHAARP can in general handle an arbitrary orientation of the optic axes with respect to the incidence plane).  The green and blue rays are homogeneous waves at $\omega$ and $2\omega$ frequency. The red ray are the inhomogeneous waves at $2\omega$.
+>Figure 3. Schematic example of different waves at both $\omega$ and $2\omega$ frequencies for the specific measurement geometry where the optic axis of an uniaxial crystal is chosen to lie in the incidence plane. (Note that ♯SHAARP can in general handle an arbitrary orientation of the optic axes with respect to the incidence plane).  The green and blue rays are homogeneous waves at $\omega$ and $2\omega$ frequency. The red ray are the inhomogeneous waves at $2\omega$.
 
 The second-order nonlinear susceptibility induces a nonlinear polarization and thus radiates nonlinear source waves at $2\omega$ frequency. The source wave at $2\omega$ frequency can be written as,
 
@@ -104,7 +104,7 @@ $$
 \end{align}
 $$
 
-## Bondary Conditions
+## Boundary Conditions
 Boundary conditions are important to accurately determine the propagation directions and the field strengths of waves. To satisfy the momentum conservation at both $\omega$ and $2\omega$ frequencies, it is required that
 
 $$
@@ -136,7 +136,7 @@ $$
 where superscripts $e$ and $o$ represent homogeneous waves at $2\omega$ and $ee$, $oo$ and $eo$ are inhomogeneous waves at $2\omega$ due to wave mixing. Using **Eq. (7)** - **(10)**, $E^{R,2\omega}$ and $E^{T,2\omega}$ can be calculated.
 
 ## Outline of ♯SHAARP
-A flowchart illustrating the procedure for solving the equations and boundary conditions for the $\omega$ and $2\omega$ waves mentioned above is presented in **Fig. 4.** The [table of symbols](table.md) summarizes all the relevant input and output variables in ♯SHAARP. The two refracted linear waves are described by solving **Eq. (2)**. Their actual field strengths can be obtained by using the boundary conditions at the fundamental frequency,$\omega$ . Given **Eqs. 3** and **4**, two homogeneous waves and three inhomogeneous waves at $2\omega$ can be uniquely determined. Following the boundary condition analysis at $2\omega$, an analytical equation for the second harmonic response can be derived and used for polar plots simulations as well as for fitting experimental polar plots and extracting intrinsic SHG susceptibilities.
+A flowchart illustrating the procedure for solving the equations and boundary conditions for the $\omega$ and $2\omega$ waves mentioned above is presented in **Fig. 4.** The [table of symbols](table.md) summarizes all the relevant input and output variables in ♯SHAARP. The two refracted linear waves are described by solving **Eq. (2)**. Their actual field strengths can be obtained by using the boundary conditions at the fundamental frequency, $\omega$. Given **Eqs. 3** and **4**, two homogeneous waves and three inhomogeneous waves at $2\omega$ can be uniquely determined. Following the boundary condition analysis at $2\omega$, an analytical equation for the second harmonic response can be derived and used for polar plots simulations as well as for fitting experimental polar plots and extracting intrinsic SHG susceptibilities.
 
 >![MethodF4.png](img/MethodF4.png)
 >Figure 4. Flowchart illustrating the key steps in deriving the polarized second harmonic fields generated by a nonlinear medium.
