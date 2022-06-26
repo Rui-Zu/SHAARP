@@ -21,5 +21,8 @@ One important application of the code is to provide analytical expressions to fi
 ### [Inputs](input.md)
 ### [Outputs](output.md)
 ### [Examples](examples.md)
-### [Frequent Asked Questions](FAQ.md)
+### [Frequently Asked Questions](FAQ.md)
 ### [Table of Symbols](table.md)
+
+## Acknowledgement
+This development of the software was supported as part of the Computational Materials Sciences Program funded by the U.S. Department of Energy, Office of Science, Basic Energy Sciences, under Award No. DE-SC0020145.
