@@ -16,9 +16,15 @@ One important application of the code is to provide analytical expressions to fi
 Follow the steps below to get started with the package. For more detailed information on ♯SHAARP._si_, please refer to the [manual](https://shaarp.readthedocs.io/en/latest/).
 
 ## Installation 
-`♯SHAARP.si` is written as a notebook using Wolfram Language and need to run with _Mathematica®_
+♯SHAARP._si_ is written as a notebook using Wolfram Language and need to run with _Mathematica®_
+### _Mathematica®_ Notebook
 - To install Mathematica, please refer to the [Installing Mathematica](https://reference.wolfram.com/language/tutorial/InstallingMathematica.html)
 - If you already have a Wolfram account, you can log in through the [portal](https://account.wolfram.com/login) and download the software.
+### Wolfram Player
+-  Wolfram Player is a free software offered by _Mathematica®_ to interact with _Mathematica®_ Notebook.
+- The download page can be accessed [here](https://www.wolfram.com/player/)
+!!! note
+	 Wolfram Player provides access to most of the capabilities of ♯SHAARP._si_ except for [Full Analytical expressions](<install.md#Linear Optical Tensors>).
 
 ## Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer
 1. Unzip the file and open the `SHAARP_si.nb`. 
@@ -37,9 +43,9 @@ Follow the steps below to get started with the package. For more detailed inform
 ## Try preset demos
 - On the left-hand panel (LHP), scroll down to “`Case Studies`”.
 - Click on <span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>. All the parameters will be autofilled for this case.
-- In the “`Functionality`”, Select “`SHG Simulation`”. Leave the other LHP settings in their default settings.
+- In the “`Functionality`”, select “`SHG Simulation`”. Leave the other LHP settings in their default settings.
 - At the top R.H. corner, click “<span style="background-color: #9CCC65">Update</span>". (Please be patient, it may take a few seconds; Watch the progress bar on the top to track when the calculation is done.)
-- The first row of the right-hand panel (RHP) should depict the SHG polar plots ($I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$) for the default settings of polarization and plane of incidence (PoI) in the LHP.
+- The second row of the right-hand panel (RHP) should depict the SHG polar plots ($I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$) for the default settings of polarization and plane of incidence (PoI) in the LHP.
 - Placing the cursor on the polar plots,and you can view a detailed description of the plots.
 
 Now you have obtained your first numerical simulation of SHG polarimetry from a single interface. Next, let’s explore various polarization settings for the fundamental ($\omega$) and SHG ($2\omega$) waves.
@@ -107,8 +113,10 @@ On the other hand, the <span style="background-color: #D3D3D3"><b>Full analytica
 - Click <span style="background-color: #D3D3D3"><b>Full Analytical Expressions</b></span> in the <span style="background-color: #D3D3D3"><b>Functionality</b></span> section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
 !!! note
 	This calculation could take up to a few minutes due to the amount of calculations involved. Please be patient! The progress bar shown at the top of the GUI helps keep track of the progress in the calculation.
-- The RHP will display the final intensity expressions of $I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$.
+- The RHP will display the equations for reflected electric fields at $2\omega$ frequency ($E^{2\omega}(\varphi,\psi)$ and $E^{2\omega}(\varphi,\psi+pi/2)$) and provide the complete set of equations in a separate notebook file, **Full Analytical Expressions.nb**,in the same directory of ♯SHAARP._si_.
 - The <span style="background-color: #D3D3D3"><b>Copy</b></span> button to the left of the expressions will allow you directly copy the expression and paste it into another document such as a Mathematica notebook, or Microsoft files.
+!!! note
+	In the RHP, you can still use <span style="background-color: #D3D3D3"><b>Copy</b></span> to copy equations though the equations are not displayed.
 - The analytical expressions are provided in sequence. For example, $E^{2\omega}(\varphi,\psi)$ is expressed using <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span>_._ The expressions for the <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span> will also be provided in the output expressions as a function of the material property coefficients and the measurement geometry.
 
 ## Defining New Presets
