@@ -53,9 +53,9 @@ This subpanel specifies the crystallography of the material of interest.
 - The rest input parameters specify the six lattice constants of the crystal. 
 
 ## Crystal Orientation
->![[img/input-crystal-orientation.png]]
+>![input-crystal-orientation.png](img/input-crystal-orientation.png)
 >**Setup crystal orientation using crystal physics directions** 
->![[img/input-crystal-orientation-2.png]]
+>![input-crystal-orientation-2.png](img/input-crystal-orientation-2.png)
 >**Setup crystal orientation using crystal physics directions**
 
 This subpanel specifies the crystal orientation of the material of interest in the geometry of SHG experiments.
@@ -65,19 +65,19 @@ There are two modes to setup the orientation:
 
 
 ## Dielectric Tensors
->![[img/input-dielectric-tensor.png]]
+>![iinput-dielectric-tensor.png](img/input-dielectric-tensor.png)
 >**Dielectric Tensor subpanel** 
 
 This subpanel specifies the dielectric permittivity in matrix form for the fundamental $\omega$ and SHG $2\omega$ waves. 
 - Note that each entry can be input with a complex number so both the real and imaginary parts of $\varepsilon_{ij}$ can be sepcified.  
 ## Second Harmonic Generation (SHG) Tensors
->![[img/input-shg-tensor.png]]
+>![input-shg-tensor.png](img/input-shg-tensor.png)
 >**SHG Tensor subpanel**
 
 This subpanel specifies the SHG tensor (in Voigt notation matrix form)
 - Note that constraints due to symmetry (specified via Point Group in the subpanel `Crystal Structure`) are imposed automatically. 
 ## Case Studies 
->![[img/input-case-studies.png]]
+>![input-case-studies.png](img/input-case-studies.png)
 >**Case Studies subpanel** 
 
 This subpanel provides a few case studies for reflective SHG experiments on common nonlinear optical crystals.
@@ -88,7 +88,7 @@ This subpanel provides a few case studies for reflective SHG experiments on comm
 - Other Crystals  
 
 ## Material Properties Preset Values
->![[img/input-preset.png]]
+>![input-preset.png](img/input-preset.png)
 >**Material Properties Preset Values** 
 
 This subpanel helps to store a set of user-defined materials properties (including lattice constants, dielectric tensors, and SHG tensors) for up to four different materials. 
