@@ -32,7 +32,7 @@ Follow the steps below to get started with the package. For more detailed inform
 2. From the menu `Evaluate` -> `Evaluate Notebook`
 	- Note: This process will clear out all the definitions from other notebooks and enable the "Notation" package for the analytical solutions.
 3. After ~30s waiting time for initialization, you will see the main panel: 
-   ![Interface.png](docs/img/Interface.png)
+   ![Interface.png](<docs/img/Interface 1.png>))
 4. The main panel contains four parts
 	- [Input panels](input.md) specify all the input parameters 
 	- [Output panels](output.md) give the output diagrams and equations 
