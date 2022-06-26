@@ -18,7 +18,7 @@
 	- Note: This process will clear out all the definitions from other notebooks and enable the "Notation" package for the analytical solutions.
 3. After ~30s waiting time for initialization, you will see the main panel: 
 	- If warning messages are shown, please re-evaluate the notebook following [Warning message of SHAARP](<FAQ.md#Warning message of SHAARP>)
-   ![Interface.png](img/Interface.png)
+   ![Interface.png](<img/Interface 1.png>)
 4. The main panel contains four parts
 	- [Input panels](input.md) specify all the input parameters 
 	- [Output panels](output.md) give the output diagrams and equations 
