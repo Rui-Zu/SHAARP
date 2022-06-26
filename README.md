@@ -23,8 +23,7 @@ Follow the steps below to get started with the package. For more detailed inform
 ### Wolfram Player
 -  Wolfram Player is a free software offered by _Mathematica®_ to interact with _Mathematica®_ Notebook.
 - The download page can be accessed [here](https://www.wolfram.com/player/)
-!!! note
-	 Wolfram Player provides access to most of the capabilities of ♯SHAARP._si_ except for [Full Analytical expressions](<install.md#Linear Optical Tensors>).
+- Note: Wolfram Player provides access to most of the capabilities of ♯SHAARP._si_ except for [Full Analytical expressions](<install.md#Linear Optical Tensors>).
 
 ## Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer
 1. Unzip the file and open the `SHAARP_si.nb`. 
