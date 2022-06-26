@@ -4,7 +4,7 @@
 ### SHG Simulation
 GaAs crystallizes in a cubic structure with the point group $\overline{4}3m$ and its linear and nonlinear optical properties have been extensively studied. In this example, the polarized nonlinear optical response will be simulated and derived both numerically and analytically.
 
-- Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer) to initiate the Mathematica notebook.
+- Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](<install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer>) to initiate the Mathematica notebook.
 - Click <span style="background-color: #D3D3D3">SHG Simulation</span> in the <span style="background-color: #D3D3D3">Functionality</span> section.
 - Click ![ExpansionButton.png](img/ExpansionButton.png)next to the <span style="background-color: #D3D3D3">Case Studies</span> to expand the content in the section.
 - Click  <span style="background-color: #D3D3D3">GaAs (111)</span> to update input parameters for <span style="background-color: #D3D3D3">Crystal Structure</span>, <span style="background-color: #D3D3D3">Crystal Orientation</span>, <span style="background-color: #D3D3D3">Linear Optical Tensors</span> and <span style="background-color: #D3D3D3">SHG Tensors (d<i><sub>ijk</sub></i>)</span>. The lattice parameters can be found in the [CIF file](http://www.crystallography.net/cod/9008845.cif). The complex linear optical properties can be found in [RefractiveIndex.Info](https://refractiveindex.info/?shelf=main&book=GaAs&page=Aspnes) and the nonlinear optical tensors were evaluated by the [Ref](https://doi-org.ezaccess.libraries.psu.edu/10.1103/PhysRevLett.90.036801). Then click <span style="background-color: #9CCC65">Update</span> to evaluate the new input.
@@ -25,7 +25,7 @@ Here, in the **geometry plot**, $(L_1,L_2,L_3)$ depicts the lab coordinate syste
 >**Effective refractive index** shows the effective refractive indices for both ordinary and extraordinary waves as a function of incident angle at $\omega$ freqency. **Ellipticity** exhibits phase relations between $E_p$ and $E_s$ at $\omega$ freqency.
 
 ### SHG Partial Analytical Expressions
-- Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer) to initiate the Mathematica notebook.
+- Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](<install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer>) to initiate the Mathematica notebook.
 - Click <span style="background-color: #D3D3D3">SHG Partial Analytical Expressions</span> in the <span style="background-color: #D3D3D3">Functionality</span> section.
 - Click ![ExpansionButton.png](img/ExpansionButton.png)next to the <span style="background-color: #D3D3D3">Case Studies</span> to expand the content in the section.
 - Click  <span style="background-color: #D3D3D3">GaAs (111)</span> to update input parameters for <span style="background-color: #D3D3D3">Crystal Structure</span>, <span style="background-color: #D3D3D3">Crystal Orientation</span>, <span style="background-color: #D3D3D3">Linear Optical Tensors</span> and <span style="background-color: #D3D3D3">SHG Tensors (d<i><sub>ijk</sub></i>)</span>. The lattice parameters can be found in the [CIF file](http://www.crystallography.net/cod/9008845.cif). The complex linear optical properties can be found in [RefractiveIndex.Info](https://refractiveindex.info/?shelf=main&book=GaAs&page=Aspnes) and the nonlinear optical tensors were evaluated by the [Ref](https://doi-org.ezaccess.libraries.psu.edu/10.1103/PhysRevLett.90.036801). Then click <span style="background-color: #9CCC65">Update</span> to evaluate the new input.
@@ -36,7 +36,7 @@ Here, in the **geometry plot**, $(L_1,L_2,L_3)$ depicts the lab coordinate syste
 >
 
 ### SHG FullAnalytical Expressions
-- Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer) to initiate the Mathematica notebook.
+- Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](<install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer>) to initiate the Mathematica notebook.
 - Click <span style="background-color: #D3D3D3">SHG Full Analytical Expressions</span> in the <span style="background-color: #D3D3D3">Functionality</span> section.
 - Click ![ExpansionButton.png](img/ExpansionButton.png)next to the <span style="background-color: #D3D3D3">Case Studies</span> to expand the content in the section.
 - Click  <span style="background-color: #D3D3D3">GaAs (111)</span> to update input parameters for <span style="background-color: #D3D3D3">Crystal Structure</span>, <span style="background-color: #D3D3D3">Crystal Orientation</span>, <span style="background-color: #D3D3D3">Linear Optical Tensors</span> and <span style="background-color: #D3D3D3">SHG Tensors (d<i><sub>ijk</sub></i>)</span>. The lattice parameters can be found in the [CIF file](http://www.crystallography.net/cod/9008845.cif). The complex linear optical properties can be found in [RefractiveIndex.Info](https://refractiveindex.info/?shelf=main&book=GaAs&page=Aspnes) and the nonlinear optical tensors were evaluated by the [Ref](https://doi-org.ezaccess.libraries.psu.edu/10.1103/PhysRevLett.90.036801). Then click <span style="background-color: #9CCC65">Update</span> to evaluate the new input.
@@ -48,4 +48,4 @@ Here, in the **geometry plot**, $(L_1,L_2,L_3)$ depicts the lab coordinate syste
 - The **Copy** button next to the equation allow direct copy of the equation to the clipboard.
 
 ## LiNbO<b><sub>3</sub></b>(110) at 800 nm
-Please refer to the [demo](install.md#Try&nbsppreset&nbspdemos) in [getting started](install.md) section for LiNbO<sub>3</sub> case.
+Please refer to the [demo](<install.md#Try preset demos>) in [getting started](install.md) section for LiNbO<sub>3</sub> case.
