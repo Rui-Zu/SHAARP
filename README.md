@@ -34,8 +34,8 @@ Follow the steps below to get started with the package. For more detailed inform
 3. After ~30s waiting time for initialization, you will see the main panel: 
    ![Interface.png](<docs/img/install-GUI.png>)
 4. The main panel contains four parts
-	- [Input panels](<docs/input.md>) specify all the input parameters 
-	- [Output panels](<docs/output.md>) give the output diagrams and equations 
+	- [Input panels](https://shaarp.readthedocs.io/en/latest/input/) specify all the input parameters 
+	- [Output panels](https://shaarp.readthedocs.io/en/latest/input/) give the output diagrams and equations 
 	- Progress bar show the progress after clicking the Update button 
 	- Update button execute the program by clicking it  
 
@@ -50,7 +50,7 @@ Follow the steps below to get started with the package. For more detailed inform
 Now you have obtained your first numerical simulation of SHG polarimetry from a single interface. Next, let’s explore various polarization settings for the fundamental $\omega$ and SHG $2\omega$ waves.
 
 ## Polarization Settings
-- The definition of the incident polarization at frequency $\omega$ is given as $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta})$, $E=(E_p,E_s)$, $\cos\varphi$,  $\sin\psi e^{i\Delta\delta}$
+- The definition of the incident polarization at frequency $\omega$ is given as $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta})$, $E=(E_p,E_s)=E_0(\cos\varphi)$, $\sin\psi$, $e^{i\Delta\delta}$, $e^{i\Delta\delta}$
 - 
 - where $E_p$ and $E_s$ are the _p_ and _s_ polarization components that are, respectively, parallel to and perpendicular to the PoI. The PoI is a plane formed by the incident wavevector, $\pmb{k}^{\omega}$, and the normal to the crystal surface. The polarization of the SHG wave (at frequency $2\omega$ is measured using a linear polarizer at an angle $\psi$, where $\psi=0^o$ and $90^o$ corresponds to the _p_-polarized and _s_-polarized SHG light, respectively.
 - In the “<span style="background-color: #D3D3D3">Polarimetry Settings</span>”, you can vary
