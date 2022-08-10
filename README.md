@@ -116,15 +116,29 @@ On the other hand, the <span style="background-color: #D3D3D3"><b>Full analytica
 ## Defining New Presets
  <span style="background-color: #D3D3D3"><b>Materials Properties Preset Values</b></span> provides a way to store your input information so that you can review those input later. It works similarly to the buttons in the  <span style="background-color: #D3D3D3"><b>Case Study</b></span> but allows users to customize input settings based on the need. This setting is particularly useful if you are varying some input settings to explore the changes towards the SHG response.
 - Take LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, to use the default parameters. Click <span style="background-color: #D3D3D3"><b>SHG Simulations</b></span> in the Functionality section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
-- Click “<span style="background-color: #D3D3D3"><b>Preset 1</b></span>” to store the input information including orientations, crystal structure, linear optical tensor values, and SHG tensor values. You can set labels for your presets and enter “LNO” in the “<span style="background-color: #D3D3D3"><b>Preset 1 Label</b></span>”. Use “<span style="background-color: #9CCC65">Update</span>” to secure the settings. Hovering cursors on preset buttons will provide more information about preset values.
+- Click “<span style="background-color: #D3D3D3"><b>Preset 1</b></span>” to store the input information including orientations, crystal structure, linear optical tensor values, and SHG tensor values. You can set labels for your presets and enter “LNO” in the “<span style="background-color: #D3D3D3"><b>Preset 1 Label</b></span>”. Use “<span style="background-color: #9CCC65">Update</span>” to secure the settings. Hovering the cursor on the pset buttons will provide more information about preset values.
 - Now, you can click <span style="background-color: #D3D3D3"><b>GaAs(111)</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span> and press “<span style="background-color: #9CCC65">Update</span>” to evaluate different materials. Go to “<span style="background-color: #D3D3D3"><b>Preset 2</b></span>” and use “<span style="background-color: #9CCC65">Update</span>” to make changes to the settings.
 - By pressing “<span style="background-color: #D3D3D3"><b>Preset 1</b></span>”, the input information will direct you back to the settings for preset 1. You can also click “<span style="background-color: #D3D3D3"><b>Preset 2</b></span>” to return to saved settings for preset 2.
-- If you click “<span style="background-color: #D3D3D3"><b>Clear Presets</b></span>”, this process will erase all saved settings for all four presets. You can redefine presets after clearing the definition.
+- If you click the “<span style="background-color: #D3D3D3"><b>Clear Presets</b></span>”, this process will erase all the saved settings for all four of the presets. You can redefine presets after clearing the definition.
 
 ## More resources 
 - Detailed description of the method can be found [here](methods.md)  
 - Some specific cases can be found [here](examples.md)  
 
+## Referenceing
+We request that you cite the following technical reference in any work for which you used ♯SHAARP:
+1. R. Zu, B. Wang, J. He, J.-J. Wang, L. Weber, L.-Q. Chen, and V. Gopalan, SHAARP: An Open-Source Package for Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals, (2022).
 
-## Reference
-1. Denev, S. A., Lummen, T. T. A., Barnes, E., Kumar, A. & Gopalan, V. Probing Ferroelectrics Using Optical Second Harmonic Generation. _Journal of the American Ceramic Society_ **94**, 2699–2727 (2011). 
+
+## References
+1. Denev, S. A., Lummen, T. T. A., Barnes, E., Kumar, A. & Gopalan, V. Probing Ferroelectrics Using Optical Second Harmonic Generation. _Journal of the American Ceramic Society_ **94**, 2699–2727 (2011).
+2. Boyd, R. W. & Prato, D. Nonlinear Optics. (Academic Press, 2008).
+3. Bloembergen, N. & Pershan, P. S. Light Waves at the Boundary of Nonlinear Media. Phys. Rev. 128, 606–622 (1962).
+4. Miller, R. C. & Nordland, W. A. Absolute Signs of Second-Harmonic Generation Coefficients of Piezoelectric Crystals. Phys. Rev. B 2, 4896–4902 (1970).
+5. Jerphagnon, J. & Kurtz, S. K. Maker Fringes: A Detailed Comparison of Theory and Experiment for Isotropic and Uniaxial Crystals. Journal of Applied Physics 41, 1667–1681 (1970).
+6. Herman, W. N. & Hayden, L. M. Maker fringes revisited: second-harmonic generation from birefringent or absorbing materials. J. Opt. Soc. Am. B, JOSAB 12, 416–427 (1995).
+7. Shoji, I., Kondo, T., Kitamoto, A., Shirane, M. & Ito, R. Absolute scale of second-order nonlinear-optical coefficients. J. Opt. Soc. Am. B, JOSAB 14, 2268–2294 (1997).
+
+
+
+
