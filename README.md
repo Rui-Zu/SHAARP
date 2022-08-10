@@ -73,21 +73,18 @@ Note that $L_2$ lab axis is always fixed be perpendicular to the PoI.
 - For the “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>” case, the default orientation under “<span style="background-color: #D3D3D3">Use Miller Indices (hkl)</span>” is set such that $(110)$ is the surface plane, and $[1 \overline{1} 0]$ is perpendicular to the PoI. Hovering your mouse over <span style="background-color: #D3D3D3">?(hkl)</span> describes the relation between 4-index and 3-index Miller indices for the trigonal and hexagonal systems.
 - The “<span style="background-color: #D3D3D3">Use crystal physics direction</span>” should be automatically populated for the preset “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>”.  Otherwise, by hovering over the <span style="background-color: #D3D3D3">?crystal physics</span> specifies the relationship between the crystal physics and crystallographic axes for the selected point group. You can use this information to directly evaluate and input this information as well.
 - Select <span style="background-color: #D3D3D3">3D Schematic</span> in the “<span style="background-color: #D3D3D3">Polarimetry Settings</span> and press “<span style="background-color: #9CCC65">Update</span>”. You can then view the crystal orientations $(Z_1,Z_2,Z_3)$ in relation to the lab frame $(L_1,L_2,L_3)$ in the 3D **Probing Geometry** plot. You can click, hold and rotate the 3D schematics to get a 3D perspective.
-!!! note
-	 Note that for the “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>” case, $Z_3$ is parallel to $L_1$ in 3D **Probing Geometry** plot.
+- **Note that for the “<span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>” case, $Z_3$ is parallel to $L_1$ in 3D** **Probing Geometry** **plot.**
 - Next, change the h,k, and l under the “<span style="background-color: #D3D3D3">[hkl] -> Direction Perpendicular to the Plane of Incidence</span>” to 0, 0, and 1. Press “<span style="background-color: #9CCC65">Update</span>” to update the calculation. The change means that you have rotated your crystal 90 degrees in-plane.
-!!! note
-	 Note that $Z_3$ is now parallel to $L_2$ in the 3D **Probing Geometry** plot.	 
+- **Note that $Z_3$ is now parallel to $L_2$ in the 3D** **Probing Geometry** **plot.** 
  
 Now you have finished the tutorial on the orientations. Detailed discussions about various coordinate systems and orientations can be found in the manual. Question marks next to “<span style="background-color: #D3D3D3">Use Miller Indices (hkl)</span>” can help you quickly refer to the definition of $(Z_1,Z_2,Z_3)$ based on the point group you have selected.
 
 ## Linear Optical Tensors
 In this section, you will need to provide either complex refractive index $\widetilde{n}$ or the complex relative dielectric permittivity $\widetilde\varepsilon$ for both the $\omega$ and $2\omega$ frequencies.
-!!! note
-	 These tensors are property tensors specificed in the crystal physics coordinates and _do not_ need to be changed when changing the crystal orientation.
+**Note, these tensors are property tensors specificed in the crystal physics coordinates and _do not_ need to be changed when changing the crystal orientation.**
 
 - You can change the <span style="background-color: #D3D3D3">complex refractive index</span> at $2\omega$ to complex values. You can change $(2.2529, 2.2529, 2.1604)$ to $(2.2529+I, 2.2529+I, 2.1604+2I)$. Press “<span style="background-color: #9CCC65">Update</span>” to update the calculation.
-- Note, use capital $I$ to represent the imaginary part in Mathematica.
+- **Note, use capital $I$ to represent the imaginary part in Mathematica.**
 - Now the polar plots are updated with a real refractive index tensor at $\omega$ but a complex refractive tensor at $2\omega$. Next, try making the dielectric tensor at $\omega$ to be complex as well.
 
 ## SHG Tensor (<i>d<sub>ijk</sub></i>)
@@ -109,12 +106,11 @@ On the other hand, the <span style="background-color: #D3D3D3"><b>Full analytica
 ### Full Analytical Expressions
 - Taking LiNbO<sub>3</sub> as an example. Click <span style="background-color: #D3D3D3"><b>LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</b></span> in the <span style="background-color: #D3D3D3"><b>Case Study</b></span>, in order to to use the default parameters.
 - Click <span style="background-color: #D3D3D3"><b>Full Analytical Expressions</b></span> in the <span style="background-color: #D3D3D3"><b>Functionality</b></span> section. Press “<span style="background-color: #9CCC65">Update</span>” to initiate the calculation.
-!!! note
-	This calculation could take up to a few minutes due to the amount of calculations involved. Please be patient! The progress bar shown at the top of the GUI helps keep track of the progress in the calculation.
+**Note, this calculation could take up to a few minutes due to the amount of calculations involved. Please be patient! The progress bar shown at the top of the GUI helps keep track of the progress in the calculation.**
 - The RHP will display the equations for reflected electric fields at $2\omega$ frequency, $E^{2\omega}(\varphi,\psi)$ and $E^{2\omega}(\varphi,\psi+pi/2)$, and provide the complete set of equations in a separate notebook file, **Full Analytical Expressions.nb**,in the same directory of ♯SHAARP._si_.
 - The <span style="background-color: #D3D3D3"><b>Copy</b></span> button to the left of the expressions will allow you directly copy the expression and paste it into another document such as a Mathematica notebook, or Microsoft files.
-!!! note
-	In the RHP, you can still use <span style="background-color: #D3D3D3"><b>Copy</b></span> to copy equations though the equations are not displayed.
+
+**Note, in the RHP, you can still use <span style="background-color: #D3D3D3"><b>Copy</b></span> to copy equations though the equations are not displayed.**
 - The analytical expressions are provided in sequence. For example, $E^{2\omega}(\varphi,\psi)$ is expressed using <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span>_._ The expressions for the <span style="color:red"><i>C<sup>T,ee,2&omega;</sup></i></span> and <span style="color:blue"><i>E<sup>T,e,2&omega;</sup></i></span> will also be provided in the output expressions as a function of the material property coefficients and the measurement geometry.
 
 ## Defining New Presets
