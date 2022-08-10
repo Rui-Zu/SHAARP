@@ -1,6 +1,7 @@
 site_name: SHAARP
 
 nav:
+    - Home: index.md
     - Getting started: install.md
     - Methods: methods.md
     - Input Parameters: input.md
