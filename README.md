@@ -28,14 +28,14 @@ Follow the steps below to get started with the package. For more detailed inform
 ## Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer
 1. Unzip the file and open the `SHAARP_si.nb`. 
 	- Note: It is recommended to keep all the files in the same directory to access the full features of `♯SHAARP.si`
-	- Make sure if the Dynamic Evaluation has been enbled (it is enabled by default).
+	- Make sure that the Dynamic Evaluation has been enbled (it is enabled by default).
 2. From the menu `Evaluate` -> `Evaluate Notebook`
 	- Note: This process will clear out all the definitions from other notebooks and enable the "Notation" package for the analytical solutions.
 3. After ~30s waiting time for initialization, you will see the main panel: 
-   ![Interface.png](<docs/img/install-GUI.png>))
+   ![Interface.png](<docs/img/install-GUI.png>)
 4. The main panel contains four parts
-	- [Input panels](input.md) specify all the input parameters 
-	- [Output panels](output.md) give the output diagrams and equations 
+	- [Input panels](<docs/input.md>) specify all the input parameters 
+	- [Output panels](<docs/output.md>) give the output diagrams and equations 
 	- Progress bar show the progress after clicking the Update button 
 	- Update button execute the program by clicking it  
 
