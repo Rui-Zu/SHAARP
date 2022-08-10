@@ -4,7 +4,6 @@ site_url: https://example.com/
 markdown_extensions:
   - attr_list
   - md_in_html
-  - pymdownx.arithmatex
   - admonition
   - pymdownx.details
   - pymdownx.superfences
