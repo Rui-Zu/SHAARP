@@ -86,7 +86,7 @@ In this section, you will need to provide either complex refractive index $\wide
 !!! note
 	 These tensors are property tensors specificed in the crystal physics coordinates and _do not_ need to be changed when changing the crystal orientation.
 
-- You can change the <span style="background-color: #D3D3D3">complex refractive index</span> at $2\omega$ to complex values. You can change  $2.2529$,  $2.2529$ and $2.1604$ to $2.2529+I$,  $2.2529+I$ and $2.1604+2I$. Press “<span style="background-color: #9CCC65">Update</span>” to update the calculation.
+- You can change the <span style="background-color: #D3D3D3">complex refractive index</span> at $2\omega$ to complex values. You can change  $2.2529$,  $2.2529$ and $2.1604$ to $2.2529+I$,  $2.2529+I$, and $2.1604+2I$. Press “<span style="background-color: #9CCC65">Update</span>” to update the calculation.
 !!! note
 	 Note, use capital $I$ to represent the imaginary part in Mathematica.
 - Now the polar plots are updated with a real refractive index tensor at $\omega$ but a complex refractive tensor at $2\omega$. Next, try making the dielectric tensor at $\omega$ to be complex as well.
