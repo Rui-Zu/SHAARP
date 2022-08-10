@@ -1,13 +1,6 @@
 site_name: SHAARP
 site_url: https://example.com/
 
-markdown_extensions:
-
-
-extra_javascript:
-  - mathjax-config.js
-  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-
 nav:
     - Home: index.md
     - Getting started: install.md
