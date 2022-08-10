@@ -1,5 +1,21 @@
 site_name: SHAARP
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra_javascript:
+  - mathjax-config.js
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 nav:
     - Home: index.md
     - Getting started: install.md
