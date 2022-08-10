@@ -122,10 +122,10 @@ On the other hand, the <span style="background-color: #D3D3D3"><b>Full analytica
 - If you click the “<span style="background-color: #D3D3D3"><b>Clear Presets</b></span>”, this process will erase all the saved settings for all four of the presets. You can redefine presets after clearing the definition.
 
 ## More resources 
-- Detailed description of the method can be found [here](methods.md)  
-- Some specific cases can be found [here](examples.md)  
+- Detailed description of the method can be found [here](https://shaarp.readthedocs.io/en/latest/methods/)  
+- Some specific cases can be found [here](https://shaarp.readthedocs.io/en/latest/examples/)  
 
-## Referenceing
+## Referencing
 We request that you cite the following technical reference in any work for which you used ♯SHAARP:
 1. R. Zu, B. Wang, J. He, J.-J. Wang, L. Weber, L.-Q. Chen, and V. Gopalan, SHAARP: An Open-Source Package for Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals, (2022).
 
