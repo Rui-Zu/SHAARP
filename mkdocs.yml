@@ -2,7 +2,6 @@ site_name: SHAARP
 site_url: https://example.com/
 
 markdown_extensions:
-
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.critic
