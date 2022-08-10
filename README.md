@@ -20,6 +20,9 @@ One important application of the code is to provide analytical expressions to fi
 
 ## Installation 
 ♯SHAARP._si_ is written as a notebook using Wolfram Language and need to run with _Mathematica®_
+
+**Download SHAARP_V1.00.zip in the file list to start using ♯SHAARP.**
+
 ### _Mathematica®_ Notebook
 - To install Mathematica, please refer to the [Installing Mathematica](https://reference.wolfram.com/language/tutorial/InstallingMathematica.html)
 - If you already have a Wolfram account, you can log in through the [portal](https://account.wolfram.com/login) and download the software.
