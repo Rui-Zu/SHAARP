@@ -50,7 +50,7 @@ Follow the steps below to get started with the package. For more detailed inform
 Now you have obtained your first numerical simulation of SHG polarimetry from a single interface. Next, let’s explore various polarization settings for the fundamental $\omega$ and SHG $2\omega$ waves.
 
 ## Polarization Settings
-- The definition of the incident polarization (at frequency $\omega$) is given as $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta} )$, where $E_p$ and $E_s$ are the _p_ and _s_ polarization components that are, respectively, parallel to and perpendicular to the PoI. The PoI is a plane formed by the incident wavevector, $\pmb{k}^{\omega}$, and the normal to the crystal surface. The polarization of the SHG wave (at frequency $2\omega$ is measured using a linear polarizer at an angle $\psi$, where $\psi=0^o$ and $90^o$ corresponds to the _p_-polarized and _s_-polarized SHG light, respectively.
+- The definition of the incident polarization at frequency $\omega$ is given as $ E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta}) $, where $E_p$ and $E_s$ are the _p_ and _s_ polarization components that are, respectively, parallel to and perpendicular to the PoI. The PoI is a plane formed by the incident wavevector, $\pmb{k}^{\omega}$, and the normal to the crystal surface. The polarization of the SHG wave (at frequency $2\omega$ is measured using a linear polarizer at an angle $\psi$, where $\psi=0^o$ and $90^o$ corresponds to the _p_-polarized and _s_-polarized SHG light, respectively.
 - In the “<span style="background-color: #D3D3D3">Polarimetry Settings</span>”, you can vary
 	1. the incident angle ( $\theta^i$, in the range between $0-90^o$ ),
 	2. the incident ($\omega$) polarization direction ($\varphi$)
