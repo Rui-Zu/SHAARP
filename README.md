@@ -44,7 +44,7 @@ Follow the steps below to get started with the package. For more detailed inform
 - Click on <span style="background-color: #D3D3D3">LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) MTI X-cut</span>. All the parameters will be autofilled for this case.
 - In the “`Functionality`”, select “`SHG Simulation`”. Leave the other LHP settings in their default settings.
 - At the top R.H. corner, click “<span style="background-color: #9CCC65">Update</span>". (Please be patient, it may take a few seconds; Watch the progress bar on the top to track when the calculation is done.)
-- The second row of the right-hand panel (RHP) should depict the SHG polar plots ($I^{2\omega}(\varphi,\psi)$, and $I^{2\omega}(\varphi,\psi+\pi/2)$) for the default settings of polarization and plane of incidence (PoI) in the LHP.
+- The second row of the right-hand panel (RHP) should depict the SHG polar plots, $I^{2\omega}(\varphi,\psi)$ and $I^{2\omega}(\varphi,\psi+\pi/2)$ for the default settings of polarization and plane of incidence (PoI) in the LHP.
 - Placing the cursor on the polar plots,and you can view a detailed description of the plots.
 
 Now you have obtained your first numerical simulation of SHG polarimetry from a single interface. Next, let’s explore various polarization settings for the fundamental $\omega$ and SHG $2\omega$ waves.
