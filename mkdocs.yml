@@ -2,9 +2,7 @@ site_name: SHAARP
 site_url: https://example.com/
 
 markdown_extensions:
-  - attr_list
-  - md_in_html
-  - admonition
+
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.critic
