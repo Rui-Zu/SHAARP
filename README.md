@@ -50,7 +50,8 @@ Follow the steps below to get started with the package. For more detailed inform
 Now you have obtained your first numerical simulation of SHG polarimetry from a single interface. Next, let’s explore various polarization settings for the fundamental $\omega$ and SHG $2\omega$ waves.
 
 ## Polarization Settings
-- The definition of the incident polarization at frequency $\omega$ is given as $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta})$, 
+- The definition of the incident polarization at frequency $\omega$ is given as 
+- $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta})$, 
 - $E_0(\cos\varphi, \sin\psi e^{i\Delta\delta})$
 - $\cos\varphi$
 - $\sin\psi e^{i\Delta\delta}$
