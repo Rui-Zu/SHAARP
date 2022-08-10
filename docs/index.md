@@ -16,8 +16,8 @@ One important application of the code is to provide analytical expressions to fi
 
 ## Project outline
 
-### [Home](install.md)
-### [Getting Started with ♯SHAARP._si_](index.md)
+### [Home](index.md)
+### [Getting Started with ♯SHAARP._si_](install.md)
 ### [Methods](methods.md)
 ### [Inputs](input.md)
 ### [Outputs](output.md)
