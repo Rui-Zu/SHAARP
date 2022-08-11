@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/github/license/Rui-Zu/SHAARP)
 ![GitHub Size](https://img.shields.io/github/repo-size/Rui-Zu/SHAARP)
 
-**♯SHAARP**._si_ is an open-source package for deriving and simulating reflected optical second harmonic generation (SHG) from a single interface (_si_), typically the surface of a single crystal. Optical SHG describes the process where two photons of frequency interact with a nonlinear medium (a crystal) to create a photon at 2$\omega$ , so called the SHG process.  (A followup package for multiple interfaces is currently being developed).
+**♯SHAARP**._si_ is an open-source package for deriving and simulating reflected optical second harmonic generation (SHG) from a single interface (_si_), typically the surface of a single crystal. Optical SHG describes the process where two photons of frequency $\omega$ interact with a nonlinear medium (a crystal) to create a photon at $2\omega$, so called the SHG process.  (A followup package for multiple interfaces is currently being developed).
 
 This package builds in the most general approach to both analytically and numerically solving the surface SHG response of a single crystal surface with arbitrary crystal symmetry, arbitrary orientation and a complex dielectric function (complex refractive indices).
 
