@@ -18,6 +18,10 @@ One important application of the code is to provide analytical expressions to fi
 - **[Documentation](https://shaarp.readthedocs.io/en/latest/)**
 - **[Arxiv](https://arxiv.org/abs/2208.03872)**
 
+## Referencing
+We request that you cite the following technical reference in any work for which you used ♯SHAARP:
+1. R. Zu, B. Wang, J. He, J.-J. Wang, L. Weber, L.-Q. Chen, and V. Gopalan, SHAARP: An Open-Source Package for Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals, (2022).
+
 ## Installation 
 ♯SHAARP._si_ is written as a notebook using Wolfram Language and need to run with _Mathematica®_
 
@@ -131,11 +135,6 @@ On the other hand, the <span style="background-color: #D3D3D3"><b>Full analytica
 ## More resources 
 - Detailed description of the method can be found [here](https://shaarp.readthedocs.io/en/latest/methods/)  
 - Some specific cases can be found [here](https://shaarp.readthedocs.io/en/latest/examples/)  
-
-## Referencing
-We request that you cite the following technical reference in any work for which you used ♯SHAARP:
-1. R. Zu, B. Wang, J. He, J.-J. Wang, L. Weber, L.-Q. Chen, and V. Gopalan, SHAARP: An Open-Source Package for Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals, (2022).
-
 
 ## References
 1. Denev, S. A., Lummen, T. T. A., Barnes, E., Kumar, A. & Gopalan, V. Probing Ferroelectrics Using Optical Second Harmonic Generation. _Journal of the American Ceramic Society_ **94**, 2699–2727 (2011).
