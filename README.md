@@ -20,7 +20,7 @@ One critical application of the code is to provide analytical expressions to pro
 
 ## Referencing
 We request that you cite the following technical reference in any work for which you used ♯SHAARP:
-1. R. Zu, B. Wang, J. He, J.-J. Wang, L. Weber, L.-Q. Chen, and V. Gopalan, SHAARP: An Open-Source Package for Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals, (2022).
+1. R. Zu, B. Wang, J. He, J.-J. Wang, L. Weber, L.-Q. Chen, and V. Gopalan, SHAARP: An Open-Source Package for Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals, (2022). https://doi.org/10.48550/arXiv.2208.03872
 
 ## Installation 
 ♯SHAARP._si_ is written as a notebook using Wolfram Language and need to run with _Mathematica®_
