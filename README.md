@@ -22,6 +22,7 @@ One critical application of the code is to provide analytical expressions to pro
 We request that you cite the following technical reference in any work for which you used ♯SHAARP:
 
 Cite as:	**arXiv:2208.03872 [physics.optics]**
+
                 **https://doi.org/10.48550/arXiv.2208.03872**
 
 ## Installation 
