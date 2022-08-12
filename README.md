@@ -13,17 +13,17 @@ As a very brief primer, the SHG interaction is given by $P_i^{2\omega} = d_{ijk}
 
 One critical application of the code is to provide analytical expressions to provide insight of intrinsic properties through the experimental observation. By such fitting, one can obtain structural information, polarization direction, as well as nonlinear optical susceptibilities. A second application is to simulate SHG response under various polarization states of incident photons, orientations and geometric considerations.
 
-## Links related to the ♯SHAARP
-- **[GitHub](https://github.com/Rui-Zu/SHAARP)**
-- **[Documentation](https://shaarp.readthedocs.io/en/latest/)**
-- **[Arxiv](https://arxiv.org/abs/2208.03872)**
-
 ## Referencing
 We request that you cite the following technical reference in any work for which you used ♯SHAARP:
 
 Cite as:
 - **arXiv:2208.03872 [physics.optics]**
 - **https://doi.org/10.48550/arXiv.2208.03872**
+
+## Links related to the ♯SHAARP
+- **[GitHub](https://github.com/Rui-Zu/SHAARP)**
+- **[Documentation](https://shaarp.readthedocs.io/en/latest/)**
+- **[Arxiv](https://arxiv.org/abs/2208.03872)**
 
 ## Installation 
 ♯SHAARP._si_ is written as a notebook using Wolfram Language and need to run with _Mathematica®_
