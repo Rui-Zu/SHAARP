@@ -7,7 +7,7 @@ GaAs crystallizes in a cubic structure with the point group $\overline{4}3m$ and
 - Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](<install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer>) to initiate the Mathematica notebook.
 - Click <span style="background-color: #D3D3D3">SHG Simulation</span> in the <span style="background-color: #D3D3D3">Functionality</span> section.
 - Click the dropdown button next to the <span style="background-color: #D3D3D3">Case Studies</span> to expand the content in the section.
-- Click  <span style="background-color: #D3D3D3">GaAs (111)</span> to update input parameters for <span style="background-color: #D3D3D3">Crystal Structure</span>, <span style="background-color: #D3D3D3">Crystal Orientation</span>, <span style="background-color: #D3D3D3">Linear Optical Tensors</span> and <span style="background-color: #D3D3D3">SHG Tensors (d<i><sub>ijk</sub></i>)</span>. The lattice parameters can be found in the [CIF file](http://www.crystallography.net/cod/9008845.cif). The complex linear optical properties can be found in [RefractiveIndex.Info](https://refractiveindex.info/?shelf=main&book=GaAs&page=Aspnes) and the nonlinear optical tensors were evaluated by the [Ref](https://doi-org.ezaccess.libraries.psu.edu/10.1103/PhysRevLett.90.036801). Then click <span style="background-color: #9CCC65">Update</span> to evaluate the new input.
+- Click <span style="background-color: #D3D3D3">GaAs (111)</span> to update input parameters for <span style="background-color: #D3D3D3">Crystal Structure</span>, <span style="background-color: #D3D3D3">Crystal Orientation</span>, <span style="background-color: #D3D3D3">Linear Optical Tensors</span> and <span style="background-color: #D3D3D3">SHG Tensors (d<i><sub>ijk</sub></i>)</span>. The lattice parameters can be found in the [CIF file](http://www.crystallography.net/cod/9008845.cif). The complex linear optical properties can be found in [RefractiveIndex.Info](https://refractiveindex.info/?shelf=main&book=GaAs&page=Aspnes) and the nonlinear optical tensors were evaluated by the [Ref](https://doi-org.ezaccess.libraries.psu.edu/10.1103/PhysRevLett.90.036801). Then click <span style="background-color: #9CCC65">Update</span> to evaluate the new input.
 - The output results will be shown in the right-hand panel. The **Probing Geometry** and **Polarization Relations** shows the orientation of crystals and polarization configuration.
 >![GaAs(111)GeometryPolarization45.png](img/GaAs(111)GeometryPolarization45.png)
 >Probing Geometry and polarization settings for GaAs (111)
@@ -17,12 +17,12 @@ Here, in the **geometry plot**, $(L_1,L_2,L_3)$ depicts the lab coordinate syste
 - The intensity of the selected electric fields are plotted as a function of $(\varphi,\Psi)$ and plotted with the same color code as presented in **Polarization Relations**.
 
 >![GaAs(111)PolarPlot45.png](img/GaAs(111)PolarPlot45.png)
->SHG polar plots as a function of $(\varphi,\Psi)$. The directions of output polarization share the same set of color codes as presented in **Polarization Relations** plot.
+>SHG polar plots as a function of $(\varphi,\Psi)$. The directions of output polarization share the same set of color codes as presented in **the Polarization Relations** plot.
 
 
 - The **Effective refractive index** and **Ellipticity** of incident light at $\omega$ are shown in the third row. In the **Effective refractive index** plot, the real parts of effective refractive indices are shown as a function of incident angle. Superscript 1 and 2 refer to ordinary and extraordinary waves. In cubic GaAs case, refractive indices are the same regardless of the directions of electric fields. In the **Ellipticity** plot, the phase relation of $E_p$ and $E_s$ is shown. If linear polarization is rotated, the ellipticity of light will be shown with $\varphi=45^o$, otherwise the explicit direction of $E^{\omega}$ will be shown.
 >![GaAs(111)IndexEllipticity.png](img/GaAs(111)IndexEllipticity.png)
->**Effective refractive index** shows the effective refractive indices for both ordinary and extraordinary waves as a function of incident angle at $\omega$ freqency. **Ellipticity** exhibits phase relations between $E_p$ and $E_s$ at $\omega$ freqency.
+>**Effective refractive index** shows the effective refractive indices for both ordinary and extraordinary waves as a function of incident angle at $\omega$ frequency. **Ellipticity** exhibits phase relations between $E_p$ and $E_s$ at $\omega$ frequency.
 
 ### SHG Partial Analytical Expressions
 - Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](<install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer>) to initiate the Mathematica notebook.
@@ -35,7 +35,7 @@ Here, in the **geometry plot**, $(L_1,L_2,L_3)$ depicts the lab coordinate syste
 >![GaAsPartialOutput.png](img/GaAsPartialOutput.png)
 >
 
-### SHG FullAnalytical Expressions
+### SHG Full Analytical Expressions
 - Follow [Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer](<install.md#Open the ♯SHAARP._si_.nb in the _Mathematica®_ software on your computer>) to initiate the Mathematica notebook.
 - Click <span style="background-color: #D3D3D3">SHG Full Analytical Expressions</span> in the <span style="background-color: #D3D3D3">Functionality</span> section.
 - Click the dropdown button next to the <span style="background-color: #D3D3D3">Case Studies</span> to expand the content in the section.
