@@ -94,7 +94,7 @@ Note that $L_2$ lab axis is always fixed be perpendicular to the PoI.
 Now you have finished the tutorial on the orientations. Detailed discussions about various coordinate systems and orientations can be found in the manual. Question marks next to “<span style="background-color: #D3D3D3">Use Miller Indices (hkl)</span>” can help you quickly refer to the definition of $(Z_1,Z_2,Z_3)$ based on the point group you have selected.
 
 ## Linear Optical Tensors
-In this section, you will need to provide either complex refractive index $\widetilde{n}$ or the complex relative dielectric permittivity $\widetilde\varepsilon$ for both the $\omega$ and $2\omega$ frequencies.
+In this section, you will need to provide either complex refractive index $\widetilde{n}$ or the complex relative dielectric permittivity $\widetilde\varepsilon$ for both the $ \omega $ and $ 2\omega $ frequencies.
 **Note, these tensors are property tensors specificed in the crystal physics coordinates and _do not_ need to be changed when changing the crystal orientation.**
 
 - You can change the <span style="background-color: #D3D3D3">complex refractive index</span> at $2\omega$ to complex values. You can change $(2.2529, 2.2529, 2.1604)$ to $(2.2529+I, 2.2529+I, 2.1604+2I)$. Press “<span style="background-color: #9CCC65">Update</span>” to update the calculation.
