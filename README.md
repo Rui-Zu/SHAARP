@@ -25,7 +25,7 @@ Cite this work:
 - **[GitHub](https://github.com/Rui-Zu/SHAARP)**
 - **[Documentation](https://shaarp.readthedocs.io/en/latest/)**
 - **[Arxiv](https://arxiv.org/abs/2208.03872)**
-- The **♯SHAARP** package for single interface (**♯SHAARP**._si_):
+- The **♯SHAARP** package for multi-layers analysis (**♯SHAARP**._ml_):
 	- Code repository: https://github.com/bzw133/SHAARP.ml
 	- Documentation of **♯SHAARP**._ml_: https://shaarpml.readthedocs.io/en/latest/ 
 	- Tutorial videos **♯SHAARP**._ml_: https://youtu.be/YiKRm6i7kNs
