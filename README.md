@@ -15,17 +15,21 @@ As a very brief primer, the SHG interaction is given by $P_i^{2\omega} = d_{ijk}
 
 One critical application of the code is to provide analytical expressions to provide insight of intrinsic properties through the experimental observation. By such fitting, one can obtain structural information, polarization direction, as well as nonlinear optical susceptibilities. A second application is to simulate SHG response under various polarization states of incident photons, orientations and geometric considerations.
 
+The new package for the multilayer structure is released as **♯SHAARP**._ml_ which can be found at [Github for **♯SHAARP**._ml_](https://github.com/bzw133/SHAARP.ml). **♯SHAARP**._ml_ is an extension package of **♯SHAARP**._si_, capable of modeling both reflected and transmitted SHG of a slab or multilayer structure.
+
 ## Referencing
 We request that you cite the following technical reference in any work for which you used ♯SHAARP:
 
 Cite this work:
-- **Zu, R., Wang, B., He, J. et al. Analytical and numerical modeling of optical second harmonic generation in anisotropic crystals using ♯SHAARP package. npj Comput Mater 8, 246 (2022). https://doi.org/10.1038/s41524-022-00930-4**
-
+1. **Zu, R., Wang, B., He, J. et al. Analytical and numerical modeling of optical second harmonic generation in anisotropic crystals using ♯SHAARP package. npj Comput Mater 8, 246 (2022). [https://doi.org/10.1038/s41524-022-00930-4](https://doi.org/10.1038/s41524-022-00930-4)**
+   
+2. **Zu, R., Wang, B., He, J. et al. Optical second harmonic generation in anisotropic multilayers with complete multireflection of linear and nonlinear waves using ♯SHAARP.ml package** **of Linear and Nonlinear Waves using ♯SHAARP._ml_ Package. npj Comput Mater 10, 64 (2023), [https://www.nature.com/articles/s41524-024-01229-2](https://www.nature.com/articles/s41524-024-01229-2)**
+    
 ## Links related to the ♯SHAARP
 - **[GitHub](https://github.com/Rui-Zu/SHAARP)**
 - **[Documentation](https://shaarp.readthedocs.io/en/latest/)**
 - **[Arxiv](https://arxiv.org/abs/2208.03872)**
-- The **♯SHAARP** package for multi-layers analysis (**♯SHAARP**._ml_):
+- The **♯SHAARP** package for multilayer analysis (**♯SHAARP**._ml_):
 	- Code repository: https://github.com/bzw133/SHAARP.ml
 	- Documentation of **♯SHAARP**._ml_: https://shaarpml.readthedocs.io/en/latest/ 
 	- Tutorial videos **♯SHAARP**._ml_: https://youtu.be/YiKRm6i7kNs
