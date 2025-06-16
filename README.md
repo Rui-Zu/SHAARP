@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/github/license/Rui-Zu/SHAARP)
 ![GitHub Size](https://img.shields.io/github/repo-size/Rui-Zu/SHAARP)
 ![Count](https://img.shields.io/jsdelivr/gh/hy/Rui-Zu/SHAARP)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FRui-Zu%2FSHAARP&countColor=%23263759)
 [![HitCount](https://hits.dwyl.com/Rui-Zu/SHAARP.svg?style=flat-square)](http://hits.dwyl.com/Rui-Zu/SHAARP)
 [![HitCount](https://hits.dwyl.com/Rui-Zu/SHAARP.svg?style=flat-square&show=unique)](http://hits.dwyl.com/Rui-Zu/SHAARP)
 
